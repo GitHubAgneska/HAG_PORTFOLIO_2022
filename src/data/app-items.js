@@ -3,7 +3,7 @@ const logoPath = '/assets/logos/'
 export const appItems = [
     {
         name: "reservia",
-        logo:logoPath +  logoPath + "reservia_logo.png",
+        logo:logoPath + "reservia_logo.png",
         deployLink: "https://githubagneska.github.io/HAgnesGenay_2_19112020/",
         repoLink: "https://github.com/GitHubAgneska/HAgnesGenay_2_19112020",
         readmeLink: "https://github.com/GitHubAgneska/HAgnesGenay_2_19112020/blob/master/README.md"

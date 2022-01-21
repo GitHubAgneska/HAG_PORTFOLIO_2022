@@ -1,16 +1,17 @@
 import { appItems } from '../../../data/app-items'
 import AppItem from './App-item'
+import { StyledSection } from '../../../style/global_style'
 
-console.log('appItems=>', appItems)
+
 const AppsList = () => { 
     return (
-        <section>
+        <StyledSection>
             <ul>
                 { appItems.map(a => (
                     <AppItem key={Math.random()} app={a}/>
                 ))}
             </ul>
-        </section>
+        </StyledSection>
     )
 }
 export default AppsList
