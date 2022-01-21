@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+links
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+reservia 
+deploy => https://githubagneska.github.io/HAgnesGenay_2_19112020/
+repo =>   https://github.com/GitHubAgneska/HAgnesGenay_2_19112020
+readme => https://github.com/GitHubAgneska/HAgnesGenay_2_19112020/blob/master/README.md
 
-## Available Scripts
+ohmyfood
+deploy => https://ohmyfoood.herokuapp.com/ ---- to review (routes) --- ! 
+repo =>   https://github.com/GitHubAgneska/HAgnesGenay_3_19112020
+readme => https://github.com/GitHubAgneska/HAgnesGenay_3_19112020/blob/master/README.md
 
-In the project directory, you can run:
+gameon
+deploy => https://githubagneska.github.io/GameOn-website-FR/
+repo =>   https://github.com/GitHubAgneska/GameOn-website-FR
+readme => https://github.com/GitHubAgneska/GameOn-website-FR/blob/master/README.md
 
-### `npm start`
+fisheye - issue express/webpack config
+deploy =>
+repo oc NO webpack => https://github.com/GitHubAgneska/HAgnesGenay_6_19112020
+repo oc webpack => https://github.com/GitHubAgneska/HAgnesGenay_6_19112020
+repo express =>
+readme => 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+lespetitsplats
+deploy => https://githubagneska.github.io/js-prefix-tree-search/
+repo =>   https://github.com/GitHubAgneska/HAgnesGenay_7_19112020
+readme => https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+kasa
+deploy => https://mysterious-mesa-34251.herokuapp.com/#/home
+repo =>   https://github.com/GitHubAgneska/KASA
+          https://github.com/GitHubAgneska/HAgnesGenay_11_19112020
+readme =>  
 
-### `npm test`
+sportsee - with express: works on dev mode ≠ prod --- ! 
+deploy =>       https://sportsee.herokuapp.com/ 
+repo express => https://github.com/GitHubAgneska/SPORTSEE
+repo  =>        https://github.com/GitHubAgneska/HAgnesGenay_12_19112020
+readme =>       https://github.com/GitHubAgneska/HAgnesGenay_12_19112020/blob/master/README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+moneybank
+deploy =>
+repo express deploy / oc => https://github.com/GitHubAgneska/HAgnesGenay_13_19112020
+readme => https://github.com/GitHubAgneska/HAgnesGenay_13_19112020/blob/master/README.md
 
-### `npm run build`
+hrnet
+deploy => 
+repo => https://github.com/GitHubAgneska/HRNET-app
+readme =>  https://github.com/GitHubAgneska/HRNET-app/blob/master/README.md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+candychase
+deploy => https://candychase2020-ionic5.herokuapp.com/
+repo => https://github.com/GitHubAgneska/CandyChase2020-ionic5
+readme => https://github.com/GitHubAgneska/CandyChase2020-ionic5/blob/master/README.md
