@@ -36,7 +36,7 @@ export const MainLogo = styled.img`
 
 export const NavLinksWrapper = styled.nav`
     display:flex;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     
     @media screen and (max-width: 600px) { 
         ${ ({burgerOpen}) => burgerOpen && `

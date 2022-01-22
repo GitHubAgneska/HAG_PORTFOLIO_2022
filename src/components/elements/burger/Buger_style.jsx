@@ -13,7 +13,7 @@ export const StyledBurger = styled.div`
     width: 2em;
     height: 2em;
 
-    z-index: 2;
+    z-index: 5;
 
     i { font-size: 6vh; color: grey; }
 
