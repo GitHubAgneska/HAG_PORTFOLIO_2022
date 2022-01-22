@@ -16,13 +16,11 @@ const AppItem = (app) => {
                     key={Math.random()}>
                     <AppItemWrapper /* style={{ backgroundImage: `url(${(app[a].logo)})`}} */>
                         
-                        <AppLogoWrapper>
-                            <a
-                            href={app[a].deployLink} 
-                            aria-label='app deploy'>
+                        <a href={app[a].deployLink} aria-label='app deploy'>
+                            <AppLogoWrapper>
                                 <img src={app[a].logo} alt="app logo" />
-                            </a>
-                        </AppLogoWrapper>
+                            </AppLogoWrapper>
+                        </a>
 
                         <AppLinksWrapper>
                             {/* <h1>{app[a].name}</h1>  */}

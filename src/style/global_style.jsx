@@ -22,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         display: flex;
         flex-direction: column;
+        .lock-scroll { overflow: hidden; }
     }
     /* a { text-decoration: none; } */
     /* input { border: transparent; } */

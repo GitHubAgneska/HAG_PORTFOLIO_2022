@@ -48,11 +48,15 @@ export const StyledTooltip = styled.span`
 
 
 export const AppLinksWrapper = styled.div `
+    min-width: 30%;
     display: flex;flex-flow: row nowrap;
+    justify-content: space-between;
     &:hover ${StyledTooltip} { visibility: visible; }
 
 `
+
 export const AppLink = styled.div`
+
     @media screen and (max-width: 600px) {height: 3em;width: 3em;}
     @media screen and (min-width: 600px) { height: 4em;width: 4em;}
     position: relative;
@@ -65,8 +69,7 @@ export const AppLink = styled.div`
     &:hover {
         border: 2px dotted blue;
         border-radius:5px;
-        transition: all 0.1s ease-in-out;
-        
+        transition: all 0.1s ease-in-out;        
     }
-   
+
 `
