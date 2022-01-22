@@ -1,27 +1,5 @@
 import { Fragment } from "react"
-import styled from "styled-components"
-
-const AppItemWrapper = styled.div `
-    border: 1px solid grey;
-    width: 30%;
-    display: flex;flex-flow: column nowrap;       
-    justify-content: center;
-    align-items: center;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: contain;
-`
-
-const AppListItem = styled.li`
-    padding: 5%;
-`
-const AppLinksWrapper = styled.div `
-    display: flex;flex-flow: column nowrap;
-`
-
-
+import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper, AppLink} from './App-item_style'
 
 const AppItem = (app) => {
     
@@ -31,22 +9,30 @@ const AppItem = (app) => {
             { Object.keys(app).map(a => (
                 <AppListItem 
                     key={Math.random()}>
-                    <AppItemWrapper style={{ backgroundImage: `url(${(app[a].logo)})`}}>
+                    <AppItemWrapper /* style={{ backgroundImage: `url(${(app[a].logo)})`}} */>
+                        
+                        <AppLogoWrapper>
+                            <a
+                            href={app[a].deployLink} 
+                            aria-label='app deploy'>
+                                <img src={app[a].logo} alt="app logo" />
+                            </a>
+                        </AppLogoWrapper>
+
                         <AppLinksWrapper>
                             {/* <h1>{app[a].name}</h1>  */}
-                            <a
-                                href={app[a].deployLink} 
-                                aria-label='app deploy'>APP
+                            <a href={app[a].repoLink} aria-label='app repo'>
+                                <AppLink>
+                                    <p>GITHUB</p>
+                                </AppLink>
                             </a>
-                            <a
-                            href={app[a].repoLink} 
-                            aria-label='app repo'>GITHUB
+
+                            <a href={app[a].readmeLink} aria-label='app repo'>
+                                <AppLink>
+                                    <p>More info</p>
+                                </AppLink>
                             </a>
-                            <a
-                            href={app[a].readmeLink} 
-                            aria-label='app repo'
-                            > More info
-                            </a>
+                            
                         </AppLinksWrapper>
                     </AppItemWrapper>
                 </AppListItem>

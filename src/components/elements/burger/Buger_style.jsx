@@ -7,7 +7,7 @@ export const StyledBurger = styled.div`
 
     transition: opacity 0.3s linear;
     position: absolute;
-    right: 2rem;
+    right:0;
     display: flex; flex-direction: column;
     justify-content: space-around;
     width: 2em;

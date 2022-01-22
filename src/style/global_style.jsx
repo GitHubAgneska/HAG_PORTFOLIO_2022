@@ -25,14 +25,16 @@ export const GlobalStyle = createGlobalStyle`
     }
     /* a { text-decoration: none; } */
     /* input { border: transparent; } */
-    ul { margin: 0; padding: 0;}
-    ul li { list-style: none; }
+   /*  ul { margin: 0; padding: 0;} */
+    /* ul li { list-style: none; } */
     button { display: block; border: none; }
 `
 export const StyledSection = styled.section `
-    width: 70%; margin: 5% auto;
-    padding: 5%;
-    border: 2px solid grey; border-radius: 5px; 
+    @media screen and (min-width: 600px) {width: 70%; }
+    @media screen and (max-width: 600px) {width: 85%;}
+    margin: 5% auto;
+    border: 1px solid grey; border-radius: 5px;
+
 `
 
 /* accessibility - .sr-only class */

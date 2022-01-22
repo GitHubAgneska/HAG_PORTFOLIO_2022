@@ -1,16 +1,16 @@
 import { appItems } from '../../../data/app-items'
 import AppItem from './App-item'
 import { StyledSection } from '../../../style/global_style'
-
+import { StyledUl } from './App-item_style'
 
 const AppsList = () => { 
     return (
         <StyledSection>
-            <ul>
+            <StyledUl>
                 { appItems.map(a => (
                     <AppItem key={Math.random()} app={a}/>
                 ))}
-            </ul>
+            </StyledUl>
         </StyledSection>
     )
 }
