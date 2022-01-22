@@ -1,48 +1,30 @@
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import styled from 'styled-components'
+import { StyledHeader, MainLogoWrapper, MainLogo, NavLinksWrapper } from './Header_style'
 import {SrOnlyH1 } from '../../style/global_style'
 import hagLogo from '../../assets/logos/hag_logo_2020_small.png'
+import  Burger from '../elements/burger/Burger'
 
-const StyledNav = styled.nav`
-border: 2px solid grey;
-    display: flex;
-    flexFlow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-`;
-
-const MainLogoWrapper = styled.div`
-    width: 1rem; // 200px;
-    min-width: 135px;
-`;
-const MainLogo = styled.img`
-    max-width: 50%;
-`
-
-const NavLinksWrapper = styled.div`
-border: 2px solid red;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    min-width: 30%;
-`
-
-
-const Header = () => { 
+const Header = () => {
+    const [burgerOpen, setBurgerOpen] = useState(false);
     return(
-        <StyledNav>
+
+        <StyledHeader>
+            
             <MainLogoWrapper>
                 <Link to="/"><MainLogo src={hagLogo} alt="hag Logo" /></Link>
                 <SrOnlyH1>HAG portfolio webdev 2022</SrOnlyH1>
             </MainLogoWrapper>
 
+            <Burger open={burgerOpen} setOpen={setBurgerOpen} />
+            
             <NavLinksWrapper>
-                <Link to="/"><p>Webdesign</p></Link>
-                <Link to="/"><p>Infos</p></Link>
+                <Link to="/" aria-label="Development"><p>Development</p></Link>
+                <Link to="/" aria-label="Webdesigns"><p>Webdesign</p></Link>
+                <Link to="/" aria-label="Infos"><p>Infos</p></Link>
             </NavLinksWrapper>
 
-        </StyledNav>
+        </StyledHeader>
     )
 }
 

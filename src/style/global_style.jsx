@@ -18,10 +18,10 @@ export const GlobalStyle = createGlobalStyle`
         color: #2c3e50;
     }
     body {
-        margin: 0;
+        margin: auto;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
     }
     /* a { text-decoration: none; } */
     /* input { border: transparent; } */
