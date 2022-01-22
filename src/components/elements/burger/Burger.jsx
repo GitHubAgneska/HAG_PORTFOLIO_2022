@@ -7,8 +7,8 @@ const Burger = ({ open, setOpen }) => {
 
         <StyledBurger open={open} onClick={() => setOpen(!open)}>
             { open? 
-                <i class="fas fa-times" id="closeNavIcon"></i>
-                :<i class="fas fa-bars" id="burgerIcon" ></i>
+                <i className="fas fa-times" id="closeNavIcon"></i>
+                :<i className="fas fa-bars" id="burgerIcon" ></i>
             }
         </StyledBurger>
     )
