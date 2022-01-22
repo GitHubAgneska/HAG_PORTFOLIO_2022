@@ -20,7 +20,6 @@ const Header = () => {
             <Burger open={burgerOpen} setOpen={setBurgerOpen}/>
             
             <SyledNav burgerOpen={burgerOpen}>
-                
                 <Link to="/" aria-label="Development"><p>Development</p></Link>
                 <Link to="/" aria-label="Webdesigns"><p>Webdesign</p></Link>
                 <Link to="/" aria-label="Infos"><p>Infos</p></Link>

@@ -24,11 +24,27 @@ export const AppItemWrapper = styled.div `
 `
 
 export const AppLogoWrapper = styled.div`
-    width:50%; text-align: left;
-    img { max-width:100%; height:auto; max-height: 70px; padding: 1%;}
+    display: flex;
+    max-width:60%;
+    @media screen and (max-width: 600px) { max-height: 80px;}
+    @media screen and (min-width: 600px) { max-height: 100px; }
+    
+    border: 1px solid blue;
+    overflow: hidden;
+    text-align: left;
+    &:hover { overflow: visible; }
+    img { 
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        /* max-height: 70px; */
+        padding: 1%;
+        object-fit: cover;
+    }
     &:hover img {
         border: 2px dotted blue;
         border-radius:5px;
+        overflow: visible;
         transition: all 0.1s ease-in-out;
     }
 `
@@ -39,6 +55,7 @@ export const StyledTooltip = styled.span`
     position: absolute;
     z-index: 1;
     top: -42px;
+    left: -24px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -51,25 +68,28 @@ export const AppLinksWrapper = styled.div `
     min-width: 30%;
     display: flex;flex-flow: row nowrap;
     justify-content: space-between;
-    &:hover ${StyledTooltip} { visibility: visible; }
-
 `
 
 export const AppLink = styled.div`
-
-    @media screen and (max-width: 600px) {height: 3em;width: 3em;}
-    @media screen and (min-width: 600px) { height: 4em;width: 4em;}
+    width: 50%;
     position: relative;
-    border: 1px solid grey;border-radius: 50%;
+    &:hover ${StyledTooltip} { visibility: visible; }
+    
+`
+export const LinkImgWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+    @media screen and (max-width: 600px) { height: 3em;width: 3em; }
+    @media screen and (min-width: 600px) { height: 4em;width: 4em; }
+    border: 1px solid grey;border-radius: 50%;
+    
     img {  max-width:80%; height:auto; max-height: 70px;}
+
     &:hover {
         border: 2px dotted blue;
         border-radius:5px;
         transition: all 0.1s ease-in-out;        
     }
-
 `

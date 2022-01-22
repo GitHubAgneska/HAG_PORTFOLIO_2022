@@ -31,7 +31,7 @@ export const appItems = [
     },
     {
         name: "les petits plats",
-        logo:logoPath +  "petits-plats_logo.png",
+        logo:logoPath +  "lesPetitsPlats_logo.png",
         deployLink: "https://githubagneska.github.io/js-prefix-tree-search/",
         repoLink: "https://github.com/GitHubAgneska/HAgnesGenay_7_19112020",
         readmeLink: "https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md"
