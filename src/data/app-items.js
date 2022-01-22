@@ -59,7 +59,7 @@ export const appItems = [
     },
     {
         name: "hrnet",
-        logo:logoPath +  "hrnet-logo.png",
+        logo:logoPath +  "hrnet_logo.png",
         logo2: "hag_logo_2020_small.png",
         deployLink: "",
         repoLink: "https://github.com/GitHubAgneska/HRNET-app",
@@ -72,6 +72,4 @@ export const appItems = [
         repoLink: "https://github.com/GitHubAgneska/HAgnesGenay_7_19112020",
         readmeLink: "https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md"
     }
-
-
 ]

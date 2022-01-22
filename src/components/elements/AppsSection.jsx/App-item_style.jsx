@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 
-export const StyledUl = styled.ul`
-    padding:2%;
-`
+export const StyledUl = styled.ul` padding:2%;`
 
 export const AppListItem = styled.li`
     width:100%;
@@ -29,7 +27,7 @@ export const AppLogoWrapper = styled.div`
     @media screen and (max-width: 600px) { max-height: 80px;}
     @media screen and (min-width: 600px) { max-height: 100px; }
     
-    border: 1px solid blue;
+   /*  border: 1px solid blue; */
     overflow: hidden;
     text-align: left;
     &:hover { overflow: visible; }
@@ -84,7 +82,7 @@ export const LinkImgWrapper = styled.div`
     @media screen and (max-width: 600px) { height: 3em;width: 3em; }
     @media screen and (min-width: 600px) { height: 4em;width: 4em; }
     border: 1px solid grey;border-radius: 50%;
-    
+    background:white;
     img {  max-width:80%; height:auto; max-height: 70px;}
 
     &:hover {
