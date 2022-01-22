@@ -3,7 +3,7 @@ import Home from './components/containers/Home'
 import Header from './components/layout/Header'
 import './App.css'
 import { GlobalStyle } from './style/global_style'
-
+import Footer from './components/layout/Footer'
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
           
           <Home />
 
-
+          <Footer />
         </Router>
     </div>
   );

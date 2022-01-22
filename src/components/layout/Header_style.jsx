@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
+    position: relative; 
     border-bottom: 1px solid grey;
     width: 85vw; margin: auto;
     display: flex; flex-flow: row nowrap;
@@ -16,7 +17,6 @@ export const StyledHeader = styled.header`
 `;
 
 export const MainLogoWrapper = styled.div`
-border: 2px solid orange;
 padding: 2%;
 width: 15%;
 transition: all 1s ease-in-out;
@@ -35,13 +35,26 @@ export const MainLogo = styled.img`
 `
 
 export const NavLinksWrapper = styled.nav`
-border: 2px solid red;
     display:flex;
-    flex-flow: row wrap;
-    @media screen and (max-width: 600px) { visibility: hidden; }
+    transition: all 0.3s ease-in-out;
+    
+    @media screen and (max-width: 600px) { 
+        ${ ({burgerOpen}) => burgerOpen && `
+            position:absolute;top:0;
+            flex-flow: column nowrap;
+            height:100vh;width: 100%;
+            z-index:3;
+            background-color: lightgrey;
+            color: white;
+            justify-content: center; align-items:center;
+            a p { font-size:1.5em; color: white;}
+        `}
+        ${ ({burgerOpen}) => !burgerOpen && `visibility: hidden;`}
+    }
     @media screen and (min-width: 600px) { 
-        width: 100%;
-        justify-content: space-around;
+        flex-flow: row wrap;
+        width: 60%;
+        justify-content: space-between;
         transition: width 1s ease-in-out;
     }
 `

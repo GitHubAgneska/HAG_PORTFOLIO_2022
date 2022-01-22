@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FooterSection = styled.section`
     display: flex;
     justify-content: center;
-    border-top: 2px solid #ccc;
+    border-top: 1px solid #ccc;
     padding: 2rem 0 1.5rem;
     p {
         margin: 0;
@@ -14,7 +14,7 @@ const FooterSection = styled.section`
 const Footer = () => { 
     return (
         <FooterSection>
-            <p>Copyright 2020 Argent Bank</p>
+            <p>© HAG - 2022</p>
         </FooterSection>
     )
 }

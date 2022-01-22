@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.div`
-font-size: 5vw;
+    font-size: 5vw;
     @media screen and (min-width: 600px) {opacity: 0;}
+    @media screen and (max-width: 600px) {opacity: 1;}
+
     transition: opacity 0.3s linear;
     position: absolute;
     right: 2rem;
