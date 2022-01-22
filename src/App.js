@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { BrowserRouter,  Routes, Route } from 'react-router-dom';
 import Home from './components/containers/Home'
 import Header from './components/layout/Header'
 import './App.css'
@@ -10,13 +10,18 @@ const App = () => {
 
     <div className="App">
         <GlobalStyle />
-        <Router>
-          <Header />
-          
-          <Home />
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route exact path='/' component={Home} />
+                <Route path='/development' component={Home} />
+                <Route path='/webdesign' component={Home} />
+                <Route path='/info' component={Home} />
+            </Routes>
+            <Home />
 
-          <Footer />
-        </Router>
+            <Footer />
+          </BrowserRouter>
     </div>
   );
 }

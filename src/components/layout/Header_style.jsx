@@ -37,7 +37,7 @@ export const MainLogo = styled.img`
 export const SyledNav = styled.nav`
     display:flex;
     transition: background-color 0.3s ease-in-out;
-    
+    .active { text-decoration: underline; }
     @media screen and (max-width: 600px) { 
         ${ ({burgerOpen}) => burgerOpen && `
             position:fixed; 
@@ -50,9 +50,7 @@ export const SyledNav = styled.nav`
             color: white;
             justify-content: center; align-items:center;
             a { width: 100%; max-width: unset; }
-            a p { 
-                font-size:1.5em; color: white;text-transform: uppercase; font-size:2em;
-            }
+            a p { font-size:1.5em; color: white; text-transform: uppercase; font-size:2em; }
         `}
         ${ ({burgerOpen}) => !burgerOpen && `visibility: hidden;`}
     }
