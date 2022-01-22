@@ -1,34 +1,32 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import { StyledHeader, MainLogoWrapper, MainLogo, SyledNav, NavLinksWrapper } from './Header_style'
-import {SrOnlyH1 } from '../../style/global_style'
+import { SrOnlyH1 } from '../../style/global_style'
 import hagLogo from '../../assets/logos/hag_logo_2020_small.png'
-import  Burger from '../elements/burger/Burger'
-
+import Burger from '../elements/burger/Burger'
 
 const Header = () => {
-    const [burgerOpen, setBurgerOpen] = useState(false);
+  const [burgerOpen, setBurgerOpen] = useState(false)
 
+  return (
 
-    return(
+    <StyledHeader>
 
-        <StyledHeader>
-            
-            <MainLogoWrapper>
-                <NavLink to="/"><MainLogo src={hagLogo} alt="hag Logo" /></NavLink>
-                <SrOnlyH1>HAG portfolio webdev 2022</SrOnlyH1>
-            </MainLogoWrapper>
+      <MainLogoWrapper>
+        <NavLink to='/'><MainLogo src={hagLogo} alt='hag Logo' /></NavLink>
+        <SrOnlyH1>HAG portfolio webdev 2022</SrOnlyH1>
+      </MainLogoWrapper>
 
-            <Burger open={burgerOpen} setOpen={setBurgerOpen}/>
-            
-            <SyledNav burgerOpen={burgerOpen}>
-                <NavLink to="/development" aria-label="Development"><p>Development</p></NavLink>
-                <NavLink to="/webdesign" aria-label="Webdesigns"><p>Webdesign</p></NavLink>
-                <NavLink to="/infos" aria-label="Infos"><p>Infos</p></NavLink>
-            </SyledNav>
+      <Burger open={burgerOpen} setOpen={setBurgerOpen} />
 
-        </StyledHeader>
-    )
+      <SyledNav burgerOpen={burgerOpen}>
+        <NavLink to='/development' aria-label='Development'><p>Development</p></NavLink>
+        <NavLink to='/webdesign' aria-label='Webdesigns'><p>Webdesign</p></NavLink>
+        <NavLink to='/infos' aria-label='Infos'><p>Infos</p></NavLink>
+      </SyledNav>
+
+    </StyledHeader>
+  )
 }
 
 export default Header

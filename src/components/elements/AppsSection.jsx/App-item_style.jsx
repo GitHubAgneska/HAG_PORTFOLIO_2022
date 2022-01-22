@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const StyledUl = styled.ul` padding:2%;`
 
 export const AppListItem = styled.li`
@@ -10,7 +9,7 @@ export const AppListItem = styled.li`
     a { display: block;}
 `
 
-export const AppItemWrapper = styled.div `
+export const AppItemWrapper = styled.div`
     display: flex;flex-flow: row nowrap;       
     justify-content: space-between;
     align-items: center;
@@ -61,8 +60,7 @@ export const StyledTooltip = styled.span`
     border-radius: 6px;
 `
 
-
-export const AppLinksWrapper = styled.div `
+export const AppLinksWrapper = styled.div`
     min-width: 30%;
     display: flex;flex-flow: row nowrap;
     justify-content: space-between;

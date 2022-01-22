@@ -14,7 +14,7 @@ export const StyledHeader = styled.header`
         max-width: 10vh;
         &:hover { color: #0065FC; }
     }
-`;
+`
 
 export const MainLogoWrapper = styled.div`
 padding: 2%;
@@ -27,7 +27,7 @@ img {
     align-items: center;
     max-width: 100%;
 }
-`;
+`
 
 export const MainLogo = styled.img`
     max-width: 100%;
@@ -39,7 +39,7 @@ export const SyledNav = styled.nav`
     transition: background-color 0.3s ease-in-out;
     .active { text-decoration: underline; }
     @media screen and (max-width: 600px) { 
-        ${ ({burgerOpen}) => burgerOpen && `
+        ${({ burgerOpen }) => burgerOpen && `
             position:fixed; 
             top: 11vh; left: 0; bottom: 0;
             flex-flow: column nowrap;
@@ -52,7 +52,7 @@ export const SyledNav = styled.nav`
             a { width: 100%; max-width: unset; }
             a p { font-size:1.5em; color: white; text-transform: uppercase; font-size:2em; }
         `}
-        ${ ({burgerOpen}) => !burgerOpen && `visibility: hidden;`}
+        ${({ burgerOpen }) => !burgerOpen && 'visibility: hidden;'}
     }
     @media screen and (min-width: 600px) { 
         flex-flow: row wrap;

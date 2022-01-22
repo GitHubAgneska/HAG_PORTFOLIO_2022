@@ -1,5 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -31,7 +30,6 @@ export const GlobalStyle = createGlobalStyle`
     button { display: block; border: none; }
 `
 
-
 /* accessibility - .sr-only class */
 export const SrOnlyH1 = styled.h1`
     border: 0 !important;
@@ -45,7 +43,7 @@ export const SrOnlyH1 = styled.h1`
     position: absolute !important;
     width: 1px !important;
     white-space: nowrap !important; /* 3 */
-`;
+`
 
 export const SrOnlyH2 = styled.h2`
     border: 0 !important;
@@ -59,6 +57,4 @@ export const SrOnlyH2 = styled.h2`
     position: absolute !important;
     width: 1px !important;
     white-space: nowrap !important; /* 3 */
-`;
-
-
+`

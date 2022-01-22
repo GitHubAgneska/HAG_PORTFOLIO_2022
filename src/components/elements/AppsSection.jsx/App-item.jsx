@@ -1,56 +1,55 @@
-import { Fragment } from "react"
-import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper, AppLink, LinkImgWrapper} from './App-item_style'
+import { Fragment } from 'react'
+import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper, AppLink, LinkImgWrapper } from './App-item_style'
 import { SrOnlyH2 } from '../../../style/global_style'
 import githublogo from '../../../assets/icons/github_logo.png'
 import plusSign from '../../../assets/icons/plusSign.png'
-import Tooltip from "../tooltip/Tooltip"
-
+import Tooltip from '../tooltip/Tooltip'
 
 const AppItem = (app) => {
-    
-    return (
+  return (
 
-        <Fragment>
-            { Object.keys(app).map(a => (
-                <AppListItem 
-                    key={Math.random()}>
-                    <AppItemWrapper /* style={{ backgroundImage: `url(${(app[a].logo)})`}} */>
-                        
-                        <AppLogoWrapper>
-                            <a href={app[a].deployLink} aria-label='app deploy'>
-                                <img src={app[a].logo} alt="app logo" />
-                            </a>
-                        </AppLogoWrapper>
+    <>
+      {Object.keys(app).map(a => (
+        <AppListItem
+          key={Math.random()}
+        >
+          <AppItemWrapper>
 
-                        <AppLinksWrapper>
-                            {/* <h1>{app[a].name}</h1>  */}
-                            <AppLink>
-                                <a href={app[a].repoLink} aria-label='app repo'>
-                                    <Tooltip tooltipContent="go to Github" />
-                                    <SrOnlyH2>GITHUB</SrOnlyH2>
-                                    <LinkImgWrapper>
-                                        <img src={githublogo} alt="github logo" />
-                                    </LinkImgWrapper>
-                                </a>
-                            </AppLink>
+            <AppLogoWrapper>
+              <a href={app[a].deployLink} aria-label='app deploy'>
+                <img src={app[a].logo} alt='app logo' />
+              </a>
+            </AppLogoWrapper>
 
-                            <AppLink>
-                                <a href={app[a].readmeLink} aria-label='app repo'>
-                                    <Tooltip tooltipContent="more info"/>
-                                    <SrOnlyH2>More info</SrOnlyH2>
-                                    {/*  <p>More info</p> */}
-                                    <LinkImgWrapper>
-                                        <img src={plusSign} alt="More info logo" />
-                                    </LinkImgWrapper>
-                                </a>
-                            </AppLink>
-                            
-                        </AppLinksWrapper>
-                    </AppItemWrapper>
-                </AppListItem>
+            <AppLinksWrapper>
+              {/* <h1>{app[a].name}</h1>  */}
+              <AppLink>
+                <a href={app[a].repoLink} aria-label='app repo'>
+                  <Tooltip tooltipContent='go to Github' />
+                  <SrOnlyH2>GITHUB</SrOnlyH2>
+                  <LinkImgWrapper>
+                    <img src={githublogo} alt='github logo' />
+                  </LinkImgWrapper>
+                </a>
+              </AppLink>
 
-            ))}
-        </Fragment>
-    )
+              <AppLink>
+                <a href={app[a].readmeLink} aria-label='app repo'>
+                  <Tooltip tooltipContent='more info' />
+                  <SrOnlyH2>More info</SrOnlyH2>
+                  {/*  <p>More info</p> */}
+                  <LinkImgWrapper>
+                    <img src={plusSign} alt='More info logo' />
+                  </LinkImgWrapper>
+                </a>
+              </AppLink>
+
+            </AppLinksWrapper>
+          </AppItemWrapper>
+        </AppListItem>
+
+      ))}
+    </>
+  )
 }
 export default AppItem

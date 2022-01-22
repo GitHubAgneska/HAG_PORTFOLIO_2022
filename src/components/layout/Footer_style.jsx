@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const FooterSection = styled.section`
     display: flex;
@@ -9,4 +9,4 @@ export const FooterSection = styled.section`
         margin: 0;
         padding: 0;
     }
-`;
+`
