@@ -11,7 +11,7 @@ const Header = () => {
   
   const handleClick = () => {
     setBurgerOpen(!burgerOpen)
-    !burgerOpen ? document.body.style = 'position:fixed' : document.body.style = 'position:initial'
+    /* !burgerOpen ? document.body.style = 'position:fixed' : document.body.style = 'position:initial' */
   }
   
   return (
@@ -28,7 +28,7 @@ const Header = () => {
       <SyledNav burgerOpen={burgerOpen}>
         <NavLink to='/development' aria-label='Development' onClick={handleClick}><p>Development</p></NavLink>
         <NavLink to='/webdesign' aria-label='Webdesigns' onClick={handleClick}><p>Webdesign</p></NavLink>
-        <NavLink to='/infos' aria-label='Infos' onClick={handleClick}><p>Infos</p></NavLink>
+        <NavLink to='/info' aria-label='Info' onClick={handleClick}><p>Info</p></NavLink>
       </SyledNav>
 
     </StyledHeader>

@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './components/containers/Home'
 import WebdesignSection from './components/elements/Webdesign-section/WebdesignSection'
+import InfoSection from './components/elements/Info-section/InfoSection'
 import Header from './components/layout/Header'
 import './App.css'
 import { GlobalStyle } from './style/global_style'
 import Footer from './components/layout/Footer'
-
+  
 const App = () => {
   return (
 
@@ -17,7 +18,7 @@ const App = () => {
             <Route path='/development' element={<Home />}/>
             <Route path='/' element={<Home />}/>
             <Route path='/webdesign' element={<WebdesignSection />}/>
-            <Route path='/info' element={<WebdesignSection />}/>
+            <Route path='/info' element={<InfoSection />}/>
             <Route path="*"  element={<Navigate to="/" />} />
           </Routes>
       </BrowserRouter>
