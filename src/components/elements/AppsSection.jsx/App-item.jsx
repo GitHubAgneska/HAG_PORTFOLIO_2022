@@ -8,11 +8,14 @@ const AppItem = (app) => {
   return (
 
     <>
-      {Object.keys(app).map(a => (
-        <AppListItem
-          key={Math.random()}
-        >
-          <AppItemWrapper>
+      { Object.keys(app).map(a => (
+        
+        <AppListItem key={Math.random()} >
+          
+          <AppItemWrapper isDeployed={app[a].deployed}>
+            { app[a].deployed && 
+              <Tooltip tooltipContent='deploy in progress!' />
+            }
 
             <AppLogoWrapper>
               <a href={app[a].deployLink} aria-label='app deploy'>

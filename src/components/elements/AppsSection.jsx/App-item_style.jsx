@@ -23,6 +23,7 @@ export const AppItemWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ff741b; border-radius: 5px;
+    ${ ({isDeployed}) => !isDeployed && `opacity:0.3;background-color:lightgrey;` }
 
 /*  background-position: center;
     background-size: cover;
@@ -32,7 +33,6 @@ export const AppItemWrapper = styled.div`
 
 export const AppLogoWrapper = styled.div`
     display: flex;
-   
     @media screen and (max-width: 600px) { max-height: 80px; max-width: 40%;}
     @media screen and (min-width: 600px) { max-height: 100px;  max-width:50%;}
     
