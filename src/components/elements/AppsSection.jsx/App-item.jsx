@@ -15,8 +15,8 @@ const AppItem = (app) => {
           <AppItemWrapper isDeployed={app[a].deployed}>
 
             <AppLogoWrapper isDeployed={app[a].deployed}>
-              <Tooltip tooltipContent='deploy in progress!' />
 
+              <Tooltip tooltipContent='deploy in progress!' />
               <a href={app[a].deployLink} aria-label='app deploy'>
                 <img src={app[a].logo} alt='app logo' />
               </a>

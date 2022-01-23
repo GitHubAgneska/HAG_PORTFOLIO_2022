@@ -7,10 +7,11 @@ export const StyledTooltip = styled.span`
     z-index: 1;
     top: -42px;
     left: -24px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
     padding: 5px 0;
+    font-size: 0.8em;
+    text-align: center;
+    color: #fff;
+    background-color: black;
     border-radius: 6px;
 `
 
@@ -38,10 +39,10 @@ export const AppItemWrapper = styled.div`
 `
 
 export const AppLogoWrapper = styled.div`
-    display: flex;
+    display: flex;position:relative;
     @media screen and (max-width: 600px) { max-height: 80px; max-width: 40%;}
     @media screen and (min-width: 600px) { max-height: 100px;  max-width:50%;}
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: left;
     img {
         width: 100%;
@@ -50,9 +51,9 @@ export const AppLogoWrapper = styled.div`
         padding: 1%;
         object-fit: contain;
     }
-    &:hover ${StyledTooltip} { visibility: visible; }
     ${ ({isDeployed}) => !isDeployed && `
         img { opacity: 0.1;}
+        &:hover ${StyledTooltip} { visibility: visible; }
     `}
 
     ${ ({isDeployed}) => isDeployed && `
