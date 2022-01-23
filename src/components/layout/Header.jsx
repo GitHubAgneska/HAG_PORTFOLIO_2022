@@ -6,8 +6,14 @@ import hagLogo from '../../assets/logos/hag_logo_2020_small.png'
 import Burger from '../elements/burger/Burger'
 
 const Header = () => {
+  
   const [burgerOpen, setBurgerOpen] = useState(false)
-
+  
+  const handleClick = () => {
+    setBurgerOpen(!burgerOpen)
+    burgerOpen ? document.body.style = 'position:fixed' : document.body.style = 'position:initial'
+  }
+  
   return (
 
     <StyledHeader>
@@ -17,7 +23,7 @@ const Header = () => {
         <SrOnlyH1>HAG portfolio webdev 2022</SrOnlyH1>
       </MainLogoWrapper>
 
-      <Burger open={burgerOpen} setOpen={setBurgerOpen} />
+      <Burger open={burgerOpen} setOpen={handleClick} />
 
       <SyledNav burgerOpen={burgerOpen}>
         <NavLink to='/development' aria-label='Development'><p>Development</p></NavLink>
