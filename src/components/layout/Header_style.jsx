@@ -35,6 +35,7 @@ export const MainLogo = styled.img`
 `
 
 export const SyledNav = styled.nav`
+    z-index:5;
     display:flex;
     transition: background-color 0.3s ease-in-out;
     .active { text-decoration: underline; font-weight: bold; }

@@ -4,6 +4,7 @@ import { StyledHeader, MainLogoWrapper, MainLogo, SyledNav, NavLinksWrapper } fr
 import { SrOnlyH1 } from '../../style/global_style'
 import hagLogo from '../../assets/logos/hag_logo_2020_small.png'
 import Burger from '../elements/burger/Burger'
+// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect'
 
 const Header = () => {
   
