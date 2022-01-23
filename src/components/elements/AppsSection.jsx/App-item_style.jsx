@@ -24,13 +24,17 @@ export const StyledUl = styled.ul`
 
 export const AppListItem = styled.li`
     display: flex;
-    @media screen and (min-width: 600px) { margin:auto; min-height: 120px;}
-    padding-bottom:10%;
+  
+    
+    @media screen and (max-width: 600px) {flex-flow: column nowrap;max-height: 100px;}
+    @media screen and (min-width: 600px) {flex-flow: column wrap;min-height: 120px;}
+    padding-bottom:5%;
     a { display: block;}
 `
 
 export const AppItemWrapper = styled.div`
-    display: flex;flex-flow: row nowrap;       
+    display: flex;flex-flow: row nowrap; 
+    width: 100%;      
     flex-shrink: 4;
     padding: 2%;
     justify-content: space-between;
@@ -50,6 +54,7 @@ export const AppLogoWrapper = styled.div`
         max-width: 100%;
         padding: 1%;
         object-fit: contain;
+        object-position: left;
     }
     ${ ({isDeployed}) => !isDeployed && `
         img { opacity: 0.1;}
