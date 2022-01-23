@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './components/containers/Home'
+import WebdesignSection from './components/elements/Webdesign-section/WebdesignSection'
 import Header from './components/layout/Header'
 import './App.css'
 import { GlobalStyle } from './style/global_style'
@@ -12,14 +13,12 @@ const App = () => {
       <GlobalStyle />
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route exact path='/' component={Home} />
-          <Route path='/development' component={Home} />
-          <Route path='/webdesign' component={Home} />
-          <Route path='/info' component={Home} />
-        </Routes>
-        <Home />
-
+          <Routes>
+            <Route path='/development' element={<Home />}/>
+            <Route path='/webdesign' element={<WebdesignSection />}/>
+            <Route path='/info' element={<WebdesignSection />}/>
+            <Route path="*"  element={<Navigate to="/" />} />
+          </Routes>
         <Footer />
       </BrowserRouter>
     </div>
