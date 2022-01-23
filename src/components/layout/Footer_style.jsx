@@ -5,6 +5,8 @@ export const FooterSection = styled.footer`
     display: flex;
     justify-content: center;
     border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
     
     @media screen and (max-width: 600px) {padding: 1rem 0 1rem; p { font-size: 0.7rem;}}
     @media screen and (min-width: 600px) {padding: 2rem 0 1.5rem; }

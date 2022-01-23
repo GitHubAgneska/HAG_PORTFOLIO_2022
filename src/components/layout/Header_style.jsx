@@ -38,24 +38,28 @@ export const SyledNav = styled.nav`
     z-index:5;
     display:flex;
     transition: background-color 0.3s ease-in-out;
-    .active { text-decoration: underline; font-weight: bold; }
+   
     @media screen and (max-width: 600px) { 
         ${({ burgerOpen }) => burgerOpen && `
             position:fixed; 
-            top: 11vh; left: 0; bottom: 0;
+            top: 11vh;
             flex-flow: column nowrap;
-            width: 100vw;
+            width: 85vw;
             z-index:3;
             overflow: hidden;
-            background-color: lightgrey;
+            background-color: #ffc39d;
             color: white;
             justify-content: center; align-items:center;
+            -webkit-box-shadow: 0px 13px 34px 2px rgba(35,1,45,0.69); 
+            box-shadow: 0px 13px 34px 2px rgba(35,1,45,0.69);
             a { width: 100%; max-width: unset; }
-            a p { font-size:1.5em; color: white; text-transform: uppercase; font-size:2em; }
+            a p { font-size:1.5em; color: white; text-transform: uppercase; font-size:1.3em; }
+            .active { text-decoration: none; font-weight: bold; p { border-bottom:1px solid white; border-top:1px solid white;} }
         `}
         ${({ burgerOpen }) => !burgerOpen && 'visibility: hidden;'}
     }
-    @media screen and (min-width: 600px) { 
+    @media screen and (min-width: 600px) {
+        .active { text-decoration: underline; font-weight: bold; }
         flex-flow: row wrap;
         width: 60%;
         justify-content: space-between;
