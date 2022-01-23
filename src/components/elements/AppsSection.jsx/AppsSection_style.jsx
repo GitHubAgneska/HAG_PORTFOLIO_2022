@@ -6,7 +6,7 @@ export const StyledSection = styled.section`
     margin: 5% auto;
    /*  border: 1px solid grey; */
     border-radius: 5px;
-    background-color:#e8d0ff;
+    /* background-color:#e8d0ff; */
 `
 
 

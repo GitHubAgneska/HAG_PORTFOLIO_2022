@@ -1,27 +1,28 @@
 import styled from 'styled-components'
 
 export const StyledUl = styled.ul`
-    width:100%;height: 100vh;
-    display: flex;
+    display: flex; 
     @media screen and (max-width: 600px) {flex-flow: column nowrap;}
-    @media screen and (min-width: 600px) {flex-flow: column wrap; }
+    @media screen and (min-width: 600px) {flex-flow: column wrap;}
     padding:2%;
 `
 
 export const AppListItem = styled.li`
     display: flex;
-    width: 50%;
-    min-height: 120px;
+    /* @media screen and (max-width: 600px) {flex-flow: column nowrap; min-height: unset;} */
+    @media screen and (min-width: 600px) { width: 50%; margin:auto; min-height: 120px;}
+    
     padding-bottom:10%;
     a { display: block;}
 `
 
 export const AppItemWrapper = styled.div`
-    flex-shrink: 4;
-    border: 1px solid red;
     display: flex;flex-flow: row nowrap;       
+    flex-shrink: 4;
+    padding: 2%;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #ff741b; border-radius: 5px;
 
 /*  background-position: center;
     background-size: cover;
@@ -31,9 +32,9 @@ export const AppItemWrapper = styled.div`
 
 export const AppLogoWrapper = styled.div`
     display: flex;
-    max-width:40%;
-    @media screen and (max-width: 600px) { max-height: 80px;}
-    @media screen and (min-width: 600px) { max-height: 100px; }
+   
+    @media screen and (max-width: 600px) { max-height: 80px; max-width: 40%;}
+    @media screen and (min-width: 600px) { max-height: 100px;  max-width:50%;}
     
    /*  border: 1px solid blue; */
     overflow: hidden;
@@ -45,7 +46,7 @@ export const AppLogoWrapper = styled.div`
         max-width: 100%;
         /* max-height: 70px; */
         padding: 1%;
-        object-fit: cover;
+        object-fit: contain;
     }
     &:hover img {
         border: 2px dotted blue;
@@ -86,8 +87,8 @@ export const LinkImgWrapper = styled.div`
     justify-content: center;
     align-content: center;
     align-items: center;
-    @media screen and (max-width: 600px) { height: 3em;width: 3em; }
-    @media screen and (min-width: 600px) { height: 4em;width: 4em; }
+    @media screen and (max-width: 600px) { height: 2em;width: 2em; }
+    @media screen and (min-width: 600px) { height: 3em;width: 3em; }
     border: 1px solid grey;border-radius: 50%;
     background:white;
     img {  max-width:80%; height:auto; max-height: 70px;}

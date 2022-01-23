@@ -11,7 +11,7 @@ const Header = () => {
   
   const handleClick = () => {
     setBurgerOpen(!burgerOpen)
-    burgerOpen ? document.body.style = 'position:fixed' : document.body.style = 'position:initial'
+    !burgerOpen ? document.body.style = 'position:fixed' : document.body.style = 'position:initial'
   }
   
   return (

@@ -37,7 +37,7 @@ export const MainLogo = styled.img`
 export const SyledNav = styled.nav`
     display:flex;
     transition: background-color 0.3s ease-in-out;
-    .active { text-decoration: underline; }
+    .active { text-decoration: underline; font-weight: bold; }
     @media screen and (max-width: 600px) { 
         ${({ burgerOpen }) => burgerOpen && `
             position:fixed; 
