@@ -24,7 +24,7 @@ export const StyledUl = styled.ul`
 
 export const AppListItem = styled.li`
     display: flex;
-    @media screen and (min-width: 600px) { width: 50%; margin:auto; min-height: 120px;}
+    @media screen and (min-width: 600px) { margin:auto; min-height: 120px;}
     padding-bottom:10%;
     a { display: block;}
 `
@@ -86,7 +86,7 @@ export const LinkImgWrapper = styled.div`
     align-content: center;
     align-items: center;
     @media screen and (max-width: 600px) { height: 2em;width: 2em; }
-    @media screen and (min-width: 600px) { height: 2.5em;width: 2.5em; }
+    @media screen and (min-width: 600px) { height: 3em;width: 3em; }
     border: 1px solid grey;border-radius: 50%;
     background:white;
     img {  max-width:80%; height:auto; max-height: 70px;}

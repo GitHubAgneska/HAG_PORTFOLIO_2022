@@ -25,7 +25,7 @@ export const InfoPres =  styled.div`
     width:100%;
     border:1px dotted red;border-radius: 5px;
     @media screen and (min-width: 600px) {padding: 5%; margin: 5%; }
-    @media screen and (max-width: 600px) {margin-bottom: 5%;}
+    @media screen and (max-width: 600px) {padding: 2%;margin-bottom: 5%;}
     transition: all 0.3s linear;
     
     div:first-child { 

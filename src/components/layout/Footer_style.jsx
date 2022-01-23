@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const FooterSection = styled.footer`
     width: 100%;
+    background: white;
     display: flex;
     justify-content: center;
     border-top: 1px solid #ccc;
