@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper, AppLink, LinkImgWrapper } from './App-item_style'
 import { SrOnlyH2 } from '../../../style/global_style'
 import githublogo from '../../../assets/icons/github_logo.png'

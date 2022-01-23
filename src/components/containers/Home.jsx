@@ -1,10 +1,6 @@
 import AppsList from '../elements/AppsSection.jsx/AppsList'
 
 const Home = () => {
-    return (
-        <main>
-            <AppsList/>
-        </main>
-    )
+    return (  <AppsList/> )
 }
 export default Home

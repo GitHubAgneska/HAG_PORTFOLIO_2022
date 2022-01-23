@@ -1,15 +1,24 @@
 import styled from 'styled-components'
 
-export const StyledUl = styled.ul` padding:2%;`
+export const StyledUl = styled.ul`
+    width:100%;height: 100vh;
+    display: flex;
+    @media screen and (max-width: 600px) {flex-flow: column nowrap;}
+    @media screen and (min-width: 600px) {flex-flow: column wrap; }
+    padding:2%;
+`
 
 export const AppListItem = styled.li`
-    width:100%;
+    display: flex;
+    width: 50%;
     min-height: 120px;
     padding-bottom:10%;
     a { display: block;}
 `
 
 export const AppItemWrapper = styled.div`
+    flex-shrink: 4;
+    border: 1px solid red;
     display: flex;flex-flow: row nowrap;       
     justify-content: space-between;
     align-items: center;
@@ -22,7 +31,7 @@ export const AppItemWrapper = styled.div`
 
 export const AppLogoWrapper = styled.div`
     display: flex;
-    max-width:60%;
+    max-width:40%;
     @media screen and (max-width: 600px) { max-height: 80px;}
     @media screen and (min-width: 600px) { max-height: 100px; }
     

@@ -8,3 +8,5 @@ export const StyledSection = styled.section`
     border-radius: 5px;
     background-color:#e8d0ff;
 `
+
+

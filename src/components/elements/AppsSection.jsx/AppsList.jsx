@@ -8,11 +8,8 @@ const AppsList = () => {
         <StyledSection>
             <StyledUl> {
                 appItems.map(a => (
-                    <AppItem key={
-                            Math.random()
-                        }
-                        app={a}/>
-                ))
+                    <AppItem key={Math.random()} app={a}/>
+                    ))
             } </StyledUl>
         </StyledSection>
     )
