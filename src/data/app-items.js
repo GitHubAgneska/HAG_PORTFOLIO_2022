@@ -30,7 +30,7 @@ export const appItems = [
     name: 'kasa',
     deployed: true,
     logo: logoPath + 'kasa_logo.png',
-    deployLink: 'https://mysterious-mesa-34251.herokuapp.com/#/home',
+    deployLink: 'https://kasa-myhomeanywhere.herokuapp.com/#/home',
     repoLink: 'https://github.com/GitHubAgneska/KASA',
     readmeLink: ''
   },
