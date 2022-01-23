@@ -26,9 +26,9 @@ const Header = () => {
       <Burger open={burgerOpen} setOpen={handleClick} />
 
       <SyledNav burgerOpen={burgerOpen}>
-        <NavLink to='/development' aria-label='Development'><p>Development</p></NavLink>
-        <NavLink to='/webdesign' aria-label='Webdesigns'><p>Webdesign</p></NavLink>
-        <NavLink to='/infos' aria-label='Infos'><p>Infos</p></NavLink>
+        <NavLink to='/development' aria-label='Development' onClick={handleClick}><p>Development</p></NavLink>
+        <NavLink to='/webdesign' aria-label='Webdesigns' onClick={handleClick}><p>Webdesign</p></NavLink>
+        <NavLink to='/infos' aria-label='Infos' onClick={handleClick}><p>Infos</p></NavLink>
       </SyledNav>
 
     </StyledHeader>
