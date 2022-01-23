@@ -13,11 +13,10 @@ const AppItem = (app) => {
         <AppListItem key={Math.random()} >
           
           <AppItemWrapper isDeployed={app[a].deployed}>
-            { app[a].deployed && 
-              <Tooltip tooltipContent='deploy in progress!' />
-            }
 
-            <AppLogoWrapper>
+            <AppLogoWrapper isDeployed={app[a].deployed}>
+              <Tooltip tooltipContent='deploy in progress!' />
+
               <a href={app[a].deployLink} aria-label='app deploy'>
                 <img src={app[a].logo} alt='app logo' />
               </a>

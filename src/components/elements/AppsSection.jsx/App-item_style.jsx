@@ -1,61 +1,5 @@
 import styled from 'styled-components'
 
-export const StyledUl = styled.ul`
-    display: flex; 
-    @media screen and (max-width: 600px) {flex-flow: column nowrap;}
-    @media screen and (min-width: 600px) {flex-flow: column wrap;}
-    padding:2%;
-`
-
-export const AppListItem = styled.li`
-    display: flex;
-    /* @media screen and (max-width: 600px) {flex-flow: column nowrap; min-height: unset;} */
-    @media screen and (min-width: 600px) { width: 50%; margin:auto; min-height: 120px;}
-    
-    padding-bottom:10%;
-    a { display: block;}
-`
-
-export const AppItemWrapper = styled.div`
-    display: flex;flex-flow: row nowrap;       
-    flex-shrink: 4;
-    padding: 2%;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ff741b; border-radius: 5px;
-    ${ ({isDeployed}) => !isDeployed && `opacity:0.3;background-color:lightgrey;` }
-
-/*  background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: contain; */
-`
-
-export const AppLogoWrapper = styled.div`
-    display: flex;
-    @media screen and (max-width: 600px) { max-height: 80px; max-width: 40%;}
-    @media screen and (min-width: 600px) { max-height: 100px;  max-width:50%;}
-    
-   /*  border: 1px solid blue; */
-    overflow: hidden;
-    text-align: left;
-    &:hover { overflow: visible; }
-    img { 
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        /* max-height: 70px; */
-        padding: 1%;
-        object-fit: contain;
-    }
-    &:hover img {
-        border: 2px dotted blue;
-        border-radius:5px;
-        overflow: visible;
-        transition: all 0.1s ease-in-out;
-    }
-`
-
 export const StyledTooltip = styled.span`
     visibility: hidden;
     width: 120px;
@@ -69,6 +13,59 @@ export const StyledTooltip = styled.span`
     padding: 5px 0;
     border-radius: 6px;
 `
+
+export const StyledUl = styled.ul`
+    display: flex; 
+    @media screen and (max-width: 600px) {flex-flow: column nowrap;}
+    @media screen and (min-width: 600px) {flex-flow: column wrap;}
+    padding:2%;
+`
+
+export const AppListItem = styled.li`
+    display: flex;
+    @media screen and (min-width: 600px) { width: 50%; margin:auto; min-height: 120px;}
+    padding-bottom:10%;
+    a { display: block;}
+`
+
+export const AppItemWrapper = styled.div`
+    display: flex;flex-flow: row nowrap;       
+    flex-shrink: 4;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ff741b; border-radius: 5px;
+`
+
+export const AppLogoWrapper = styled.div`
+    display: flex;
+    @media screen and (max-width: 600px) { max-height: 80px; max-width: 40%;}
+    @media screen and (min-width: 600px) { max-height: 100px;  max-width:50%;}
+    overflow: hidden;
+    text-align: left;
+    img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        padding: 1%;
+        object-fit: contain;
+    }
+    &:hover ${StyledTooltip} { visibility: visible; }
+    ${ ({isDeployed}) => !isDeployed && `
+        img { opacity: 0.1;}
+    `}
+
+    ${ ({isDeployed}) => isDeployed && `
+        &:hover img {
+            border: 2px dotted blue;
+            border-radius:5px;
+            overflow: visible;
+            transition: all 0.1s ease-in-out;
+        }
+    ` }
+`
+
+
 
 export const AppLinksWrapper = styled.div`
     min-width: 30%;
@@ -88,7 +85,7 @@ export const LinkImgWrapper = styled.div`
     align-content: center;
     align-items: center;
     @media screen and (max-width: 600px) { height: 2em;width: 2em; }
-    @media screen and (min-width: 600px) { height: 3em;width: 3em; }
+    @media screen and (min-width: 600px) { height: 2.5em;width: 2.5em; }
     border: 1px solid grey;border-radius: 50%;
     background:white;
     img {  max-width:80%; height:auto; max-height: 70px;}
