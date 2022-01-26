@@ -18,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
     button { display: block; border: none; }
     a, input, button {cursor: pointer; }
 
+    .app-container { 
+        margin: 0% 10%;
+        background-color:pink;
+    }
+    main { width:100%; height:100%;}
+
     .notFoundPage-wrapper {
 
         .notFound-pic-wrapper {
