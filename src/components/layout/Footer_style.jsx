@@ -1,43 +1,16 @@
 import styled from 'styled-components'
+import '@fontsource/questrial'
 
 export const FooterSection = styled.footer`
-    position: fixed;
-    bottom: 0;
-
-    height:5%;
+    color: white;
     width: 100%;
-    background: white;
+    position: fixed;
+    bottom: 0;left: 0;
     
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #ccc;
-    
-    @media screen and (max-width: 600px) {padding: 1rem 0 1rem; p { font-size: 0.7rem;}}
-    @media screen and (min-width: 600px) {padding: 2rem 0 1.5rem; }
-    /* p { margin: 0; padding: 0; } */
+    text-align:center;
+    font-family: 'Questrial';
+
+    p {margin: 0; }
+    @media screen and (max-width: 600px) {height:30px; p { font-size:15px; }}
+    @media screen and (min-width: 600px) {height:45px; p { font-size:25px; }}
 `
-
-/* 
-.footer-wrapper {
-    height: 200px; // 13.4375em
-    width:100vw;
-    @include flex(col, nowrap);
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    margin-top: 50px;
-    
-    .footer {
-
-        &__logo-wrapper {
-            margin:auto;
-            @include max-600px { width: 120px;}
-            @include min-600px { width:130px;}
-            height:40px;
-            img { max-width: 100%;}
-        }
-        &__credentials {
-            p {text-align: center; color:$white; }
-        }
-    }
-} */

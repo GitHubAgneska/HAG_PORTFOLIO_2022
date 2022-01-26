@@ -11,6 +11,5 @@ export const StyledBurger = styled.div`
     @media screen and (min-width: 600px) {opacity:0;}
     @media screen and (max-width: 600px) {opacity: 1;}
     transition: opacity 0.3s linear;
-    i { font-size: 6vh; color: grey; }
-
+    i { font-size: 6vh; color: white; }
 `

@@ -14,13 +14,19 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    body { margin: 0; }
+    body { 
+        margin: 0; height: 100vh;
+        background-image: url('../assets/BG/nightsky_gradient-2.png')
+    }
     button { display: block; border: none; }
     a, input, button {cursor: pointer; }
+    a { text-decoration: none; }
 
     .app-container { 
         margin: 0% 10%;
-        background-color:pink;
+        height: 100vh;
+        overflow: hidden;
+        /* background-color:pink; */
     }
     main { width:100%; height:100vh;}
 

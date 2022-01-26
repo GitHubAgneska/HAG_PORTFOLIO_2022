@@ -1,5 +1,6 @@
 import { FooterSection } from './Footer_style'
 
+
 const Footer = () => {
   return (
     <FooterSection>

@@ -3,22 +3,22 @@ import '@fontsource/shrikhand'
 
 export const StyledNav = styled.nav`
     font-family: 'Shrikhand';
-   
-    
     display: flex;
+    a p { color: white;}
     
     ${({ hostParent }) => hostParent === 'home' && `
         
         flex-flow: column nowrap;  
         
         @media screen and (min-width: 600px) {
-            height:100%; 
+            height:60%; 
             margin: 3% 8.5%;
             font-size: 50px;
             a:first-child {  align-self: end; margin-left: 8.5%; }
             a:nth-child(2) { align-self: start;}
             a:nth-child(3) { align-self: end; }
             a p { margin: 0; }
+            justify-content: space-between;
         }
         @media screen and (max-width: 600px) {
             font-size: 30px;
