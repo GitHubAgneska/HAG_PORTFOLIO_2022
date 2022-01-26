@@ -4,7 +4,23 @@ import '@fontsource/shrikhand'
 export const StyledNav = styled.nav`
     font-family: 'Shrikhand';
     display: flex;
-    a p { color: white;}
+    a { padding: 3%; }
+    a p { color: white;}
+    a:hover, a:active { 
+        border:1px solid white;border-radius:5px;
+        text-shadow:
+                /* White glow */
+                    0 0 10px #fff,
+                /* Green glow */
+                    0 0 42px #0fa,
+                    0 0 82px #0fa,
+                    0 0 92px #0fa,
+                    0 0 102px #0fa,
+                    0 0 151px #0fa;
+                    transition: all 0.3s linear;
+    }
+
+    /* text-shadow: 0 0 10px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
     
     ${({ hostParent }) => hostParent === 'home' && `
         
@@ -25,7 +41,6 @@ export const StyledNav = styled.nav`
             a { align-self: initial; width: unset; p { text-align: center; }}
             justify-content: center;
         }
-
     `}
 
 
