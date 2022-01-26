@@ -38,7 +38,7 @@ export const SyledNav = styled.nav`
     z-index:5;
     display:flex;
     transition: background-color 0.3s ease-in-out;
-   
+
     @media screen and (max-width: 600px) { 
         ${({ burgerOpen }) => burgerOpen && `
             position:fixed; 

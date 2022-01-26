@@ -13,21 +13,39 @@ export const GlobalStyle = createGlobalStyle`
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
     }
-    body {
-        margin: auto;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        .lock-scroll { overflow: hidden; }
-    }
-    /* a { text-decoration: none; } */
-    /* input { border: transparent; } */
-   /*  ul { margin: 0; padding: 0;} */
-    /* ul li { list-style: none; } */
+    body { margin: 0; }
     button { display: block; border: none; }
+    a, input, button {cursor: pointer; }
+
+    .notFoundPage-wrapper {
+
+        .notFound-pic-wrapper {
+            // @include calcResponsiveSize(320px, 195px, 50vw, 580px);
+            //@include max-992px { height: 70px;}
+            //@include min-992px { height: 200px;}
+            img { 
+                min-width: auto;
+                max-height: 100%;
+                margin: auto;
+                display: block;
+            }
+        }
+        h1, h2 {text-align: center;}
+    }
+    
+    // accessibility
+    .visuallyHidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
 `
 
 /* accessibility - .sr-only class */

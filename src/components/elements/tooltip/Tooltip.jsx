@@ -1,4 +1,4 @@
-import { StyledTooltip } from '../AppsSection.jsx/App-item_style'
+import { StyledTooltip } from '../Dev-section/App-item_style'
 
 const Tooltip = ({ tooltipContent, parent }) => {
   return (

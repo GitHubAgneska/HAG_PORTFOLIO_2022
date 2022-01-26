@@ -24,8 +24,6 @@ export const StyledUl = styled.ul`
 
 export const AppListItem = styled.li`
     display: flex;
-  
-    
     @media screen and (max-width: 600px) {flex-flow: column nowrap;max-height: 100px;}
     @media screen and (min-width: 600px) {flex-flow: column wrap;min-height: 120px;}
     padding-bottom:5%;
