@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0% 10%;
         background-color:pink;
     }
-    main { width:100%; height:100%;}
+    main { width:100%; height:100vh;}
 
     .notFoundPage-wrapper {
 
