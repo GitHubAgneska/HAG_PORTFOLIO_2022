@@ -19,15 +19,22 @@ export const AppListItem = styled.li `list-style-type:none`
 
 export const AppItemWrapper = styled.div`
     width: 100%; 
+    margin: 5% 0;
+
     display: flex;
     flex-flow: row nowrap;
-    align-items: center; 
+    align-items: center;
     color: white;
-    border: 2px solid white; border-radius: 5px;
+    border: 1px solid white; border-radius: 5px;
+    
+    /* border neon effect */
+    box-shadow: 
+                0 0 3px #fff,
+                0 0 0.2rem #0fa,
+                0 0 0.7rem #0fa,
+                inset 0 0 0.2rem #0fa;
 
-   /*  overflow: hidden; */
 
-    margin: 5% 0;
     @media screen and (max-width: 600px) { height: 12vh; }
     @media screen and (min-width: 600px) { height: 17vh; }
 `

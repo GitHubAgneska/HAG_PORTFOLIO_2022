@@ -25,7 +25,6 @@ export const StyledNav = styled.nav`
     }
     
     /* ---- HOME PAGE DESKTOP ONLY: nav is full page ----- */
-    
     ${({ hostParent }) => hostParent === 'home' && `
         
         flex-flow: column nowrap;  
@@ -42,8 +41,7 @@ export const StyledNav = styled.nav`
             justify-content: space-between;
         }
 
-        /* ---- HOME PAGE MOBILE ONLY ----- */
-
+    /* ---- HOME PAGE MOBILE ONLY ----- */
         @media screen and (max-width: 600px) {
             font-size: 30px;
             a { align-self: initial; width: unset; p { text-align: center; }}
@@ -55,10 +53,9 @@ export const StyledNav = styled.nav`
 
 
     /* -------- ALL PAGES (except home) -------- */
-
     ${({ hostParent }) => hostParent !== 'home' && `
-        /* --------  DESKTOP -------- */
-
+        
+    /* --------  DESKTOP -------- */
             @media screen and (min-width: 600px) {
                 position: absolute; right: 0;
                 width: 60%; display: flex; flex-flow: row nowrap;
