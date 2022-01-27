@@ -87,6 +87,7 @@ export const InfoPresLinks = styled.div`
     @media screen and (max-width: 600px) {flex-basis: 100%;  flex-flow: column nowrap;}
     @media screen and (min-width: 600px) {flex-flow: row nowrap; border-left: 1px solid white;}
 `
+
 export const GroupIconsWrapper = styled.div`
 /* border: 1px solid red;   */
     display: flex;

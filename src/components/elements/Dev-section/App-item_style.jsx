@@ -48,6 +48,7 @@ export const AppItemWrapper = styled.div`
 export const AppLogoWrapper = styled.div`
 
     position:relative;
+    max-height: 100%;
     display: flex;
     text-align: left;
 
@@ -77,11 +78,11 @@ export const AppLogoWrapper = styled.div`
     ${ ({isDeployed}) => isDeployed && `
         img:hover {
             box-shadow: 
-            0 0 0.8rem #bc13fe,
-            0 0 2.8rem #bc13fe,
-            inset 0 0 03rem #bc13fe;
+            0 0 1rem #bc13fe,
+            0 0 1rem #bc13fe,
+            inset 0 0 10rem #bc13fe;
+            transition: all 0.5s ease-in-out;
         }
-        transition: all 0.2s ease-in-out;
     ` }
 `
 export const AppKeywordsWrapper = styled.div`
