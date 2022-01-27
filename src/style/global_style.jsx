@@ -16,7 +16,9 @@ export const GlobalStyle = createGlobalStyle`
     }
     body { 
         margin: 0; height: 100vh;
-        background-image: url('../assets/BG/nightsky_gradient-2.png')
+        background-image: url('../assets/BG/nightsky_gradient-2.png');
+        background-repeat: no-repeat;
+        background-position: cover;
     }
     button { display: block; border: none; }
     a, input, button {cursor: pointer; }
@@ -25,8 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     .app-container { 
         margin: 0% 10%;
         height: 100vh;
-        /* overflow: hidden; */
-        /* background-color:pink; */
+        overflow: hidden;
     }
     main { width:100%; height:100vh;}
 
