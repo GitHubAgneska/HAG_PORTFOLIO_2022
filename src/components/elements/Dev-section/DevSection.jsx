@@ -1,7 +1,7 @@
 import {appItems} from '../../../data/app-items'
 import AppItem from './App-item'
-import {StyledSection, ListWrapper} from './DevSection_style'
-import {StyledUl} from './App-item_style'
+import {StyledSection, ListWrapper, StyledUl} from './DevSection_style'
+import {} from './App-item_style'
 
 const DevSection = () => {
     return (

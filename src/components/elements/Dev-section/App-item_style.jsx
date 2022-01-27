@@ -4,7 +4,7 @@ export const StyledTooltip = styled.span`
     visibility: hidden;
     width: 120px;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
     top: -42px;
     left: -24px;
     padding: 5px 0;
@@ -15,46 +15,51 @@ export const StyledTooltip = styled.span`
     border-radius: 6px;
 `
 
-export const StyledUl = styled.ul`
-    width: 100%;
-    margin: 0;
-    padding: 0;
-`
-
-export const AppListItem = styled.li`
-    display: flex;
-    @media screen and (max-width: 600px) {flex-flow: column nowrap;max-height: 100px;}
-    @media screen and (min-width: 600px) {flex-flow: column wrap;min-height: 120px;}
-    padding-bottom:5%;
-    a { display: block;}
-`
+export const AppListItem = styled.li`list-style-type:none`
 
 export const AppItemWrapper = styled.div`
-    display: flex;flex-flow: row nowrap; 
-    width: 100%;      
-    flex-shrink: 4;
-    padding: 2%;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ff741b; border-radius: 5px;
+    width: 100%;
+    height: 15vh;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; 
+    color: white;
+    border: 2px solid white; border-radius: 5px;
+
+    overflow: hidden;
 `
 
 export const AppLogoWrapper = styled.div`
-    display: flex;position:relative;
-    @media screen and (max-width: 600px) { max-height: 80px; max-width: 40%;}
-    @media screen and (min-width: 600px) { max-height: 100px;  max-width:50%;}
-    /* overflow: hidden; */
+
+    border: 1px solid yellow;
+
+    position:relative;
+    display: flex;
+
+    @media screen and (max-width: 600px) {
+        flex-basis: 25%;
+        max-height: 80px;
+        max-width: 40%;
+    }
+    
+    @media screen and (min-width: 600px) {
+        flex-basis: 30%; 
+        max-height: 100px;  max-width:50%;
+    }
+
     text-align: left;
+    padding: 1%;
+    
     img {
         width: 100%;
         height: 100%;
         max-width: 100%;
-        padding: 1%;
         object-fit: contain;
         object-position: left;
     }
     ${ ({isDeployed}) => !isDeployed && `
-        img { opacity: 0.1;}
+        img { opacity: 0.3;}
         &:hover ${StyledTooltip} { visibility: visible; }
     `}
 
@@ -67,7 +72,22 @@ export const AppLogoWrapper = styled.div`
         }
     ` }
 `
+export const AppKeywordsWrapper = styled.div`
+        height:100%;
+        flex-basis: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1%;
+        border: 1px solid yellow;
+        overflow:hidden;
 
+        p {
+            width: 50%;
+            margin: 0;
+            font-size: calc(0.7vw + 0.3vh + 1vmin);
+            text-overflow: ellipsis;
+        }
+`
 
 
 export const AppLinksWrapper = styled.div`
@@ -89,12 +109,11 @@ export const LinkImgWrapper = styled.div`
     align-items: center;
     @media screen and (max-width: 600px) { height: 2em;width: 2em; }
     @media screen and (min-width: 600px) { height: 3em;width: 3em; }
-    border: 1px solid grey;border-radius: 50%;
-    background:white;
+    border: 1px solid white; border-radius: 50%;
     img {  max-width:80%; height:auto; max-height: 70px;}
 
     &:hover {
-        border: 2px dotted blue;
+        
         border-radius:5px;
         transition: all 0.1s ease-in-out;        
     }

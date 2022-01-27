@@ -4,7 +4,8 @@ export const appItems = [
   {
     name: 'candychase',
     deployed: true,
-    logo: logoPath + 'candychase_logo.png',
+    keywords: ['Game/educational', 'Ionic5', 'Geoloc'],
+    logo: logoPath + 'candychase_logo-full.png',
     deployLink: 'https://candychase2020-ionic5.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md'
@@ -12,6 +13,7 @@ export const appItems = [
   {
     name: 'hrnet',
     deployed: false,
+    keywords: ['HR app', 'React/Redux', 'Migration from JQuery', 'Lighthouse'] ,
     logo: logoPath + 'hrnet_logo.png',
     logo2: 'hag_logo_2020_small.png',
     deployLink: '',
@@ -21,6 +23,7 @@ export const appItems = [
   {
     name: 'sportsee',
     deployed: false,
+    keywords: ['Dashboard analytics', 'React', 'Recharts'],
     logo: logoPath + 'sportsee_logo_main.png',
     deployLink: 'https://sportsee.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/SPORTSEE',
@@ -29,6 +32,7 @@ export const appItems = [
   {
     name: 'kasa',
     deployed: true,
+    keywords: ['B&B app', 'React', 'Integration', 'Full responsive' ],
     logo: logoPath + 'kasa_logo.png',
     deployLink: 'https://kasa-myhomeanywhere.herokuapp.com/#/home',
     repoLink: 'https://github.com/GitHubAgneska/KASA',
@@ -37,6 +41,7 @@ export const appItems = [
   {
     name: 'moneybank',
     deployed: false,
+    keywords: ['Banking app', 'React/Redux', 'MongoDB', 'Swagger'],
     logo: logoPath + 'argentBank_logo.png',
     deployLink: '',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
@@ -45,7 +50,8 @@ export const appItems = [
   {
     name: 'ohmyfood',
     deployed: true,
-    logo: logoPath + 'ohmyfood_logo.png',
+    keywords: [ 'Booking app', 'HTML/CSS', 'CSS animations', 'Integration', 'Full responsive'],
+    logo: logoPath + 'ohmyfood_logo_white.png',
     deployLink: 'https://ohmyfoood.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_3_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_3_19112020/blob/master/README.md'
@@ -53,6 +59,7 @@ export const appItems = [
   {
     name: 'gameon',
     deployed: true,
+    keywords: ['Vanilla Js', 'Integration', 'Full responsive'],
     logo: logoPath + 'gameon_logo_M.png',
     deployLink: 'https://githubagneska.github.io/GameOn-website-FR/',
     repoLink: 'https://github.com/GitHubAgneska/GameOn-website-FR',
@@ -61,6 +68,7 @@ export const appItems = [
   {
     name: 'fisheye',
     deployed: false,
+    keywords: [ 'Vanilla Js', 'Full accessibility support', 'JS Design patterns'],
     logo: logoPath + 'fisheye-logo.png',
     deployLink: '',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
@@ -69,6 +77,7 @@ export const appItems = [
   {
     name: 'les petits plats',
     deployed: true,
+    keywords: ['Search engine', 'Vanilla Js', 'Prefix trie/linear search', 'Algorithm performances comparison'],
     logo: logoPath + 'lesPetitsPlats_logo.png',
     deployLink: 'https://githubagneska.github.io/js-prefix-tree-search/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
@@ -77,6 +86,7 @@ export const appItems = [
   {
     name: 'reservia',
     deployed: true,
+    keywords: ['Booking static app', 'HTML/CSS', 'Integration', 'Full responsive'],
     logo: logoPath + 'reservia_logo.png',
     deployLink: 'https://githubagneska.github.io/HAgnesGenay_2_19112020/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_2_19112020',

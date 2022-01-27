@@ -1,6 +1,6 @@
-import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper, AppLink, LinkImgWrapper } from './App-item_style'
+import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper,AppKeywordsWrapper, AppLink, LinkImgWrapper } from './App-item_style'
 import { SrOnlyH2 } from '../../../style/global_style'
-import githublogo from '../../../assets/icons/github_logo.png'
+import githublogo from '../../../assets/icons/github_logo_white.png'
 import plusSign from '../../../assets/icons/plusSign.png'
 import Tooltip from '../tooltip/Tooltip'
 
@@ -15,14 +15,20 @@ const AppItem = (app) => {
           <AppItemWrapper isDeployed={app[a].deployed}>
 
             <AppLogoWrapper isDeployed={app[a].deployed}>
-
               <Tooltip tooltipContent='deploy in progress!' />
               <a href={app[a].deployLink} aria-label='app deploy'>
                 <img src={app[a].logo} alt='app logo' />
               </a>
             </AppLogoWrapper>
 
+            <AppKeywordsWrapper>
+                {app[a].keywords.map(k => (
+                  <p key={Math.random()}> {k}</p>
+                ))}
+            </AppKeywordsWrapper>
+
             <AppLinksWrapper>
+
               {/* <h1>{app[a].name}</h1>  */}
               <AppLink>
                 <a href={app[a].repoLink} aria-label='app repo'>
@@ -46,6 +52,9 @@ const AppItem = (app) => {
               </AppLink>
 
             </AppLinksWrapper>
+
+
+
           </AppItemWrapper>
         </AppListItem>
 
