@@ -80,8 +80,6 @@ border: 1px solid red;
     @media screen and (max-width: 600px) {height:60px;}
     @media screen and (min-width: 600px) {justify-content: end;}
     div { margin: 5%; }
-
-
 `
 
 export const IconWrapper = styled.div`
@@ -93,7 +91,8 @@ export const IconWrapper = styled.div`
     img {  
         max-width:100%; height:auto;
         max-height: 60px;min-width: 30px;
-        border-radius: 50%; }
+        border-radius: 50%;
+    }
     img:hover {
         box-shadow: 
         0 0 0.8rem #bc13fe,

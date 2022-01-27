@@ -1,7 +1,7 @@
 import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper,AppKeywordsWrapper, AppLink, LinkImgWrapper } from './App-item_style'
 import { SrOnlyH2 } from '../../../style/global_style'
 import githublogo from '../../../assets/icons/github_logo_white.png'
-import plusSign from '../../../assets/icons/plusSign.png'
+import readme from '../../../assets/icons/readme_icon_nostroke_yellow.png'
 import Tooltip from '../tooltip/Tooltip'
 
 const AppItem = (app) => {
@@ -29,24 +29,25 @@ const AppItem = (app) => {
 
             <AppLinksWrapper>
 
-              {/* <h1>{app[a].name}</h1>  */}
               <AppLink>
-                <a href={app[a].repoLink} aria-label='app repo'>
+                <a href={app[a].repoLink} aria-label='app github repo'>
                   <Tooltip tooltipContent='go to Github' />
                   <SrOnlyH2>GITHUB</SrOnlyH2>
+
                   <LinkImgWrapper>
                     <img src={githublogo} alt='github logo' />
                   </LinkImgWrapper>
+
                 </a>
               </AppLink>
 
               <AppLink>
-                <a href={app[a].readmeLink} aria-label='app repo'>
+                <a href={app[a].readmeLink} aria-label='app github readme'>
                   <Tooltip tooltipContent='more info' />
                   <SrOnlyH2>More info</SrOnlyH2>
-                  {/*  <p>More info</p> */}
+
                   <LinkImgWrapper>
-                    <img src={plusSign} alt='More info logo' />
+                    <img src={readme} alt='More info logo' />
                   </LinkImgWrapper>
                 </a>
               </AppLink>

@@ -4,7 +4,7 @@ export const StyledTooltip = styled.span`
     visibility: hidden;
     width: 120px;
     position: absolute;
-    z-index: 5;
+    z-index: 8;
     top: -42px;
     left: -24px;
     padding: 5px 0;
@@ -15,30 +15,35 @@ export const StyledTooltip = styled.span`
     border-radius: 6px;
 `
 
-export const AppListItem = styled.li`list-style-type:none`
+export const AppListItem = styled.li `list-style-type:none`
 
 export const AppItemWrapper = styled.div`
-    width: 100%;
-    height: 15vh;
-    
+    width: 100%; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center; 
     color: white;
     border: 2px solid white; border-radius: 5px;
 
-    overflow: hidden;
+   /*  overflow: hidden; */
+
+    margin: 5% 0;
+    @media screen and (max-width: 600px) { height: 12vh; }
+    @media screen and (min-width: 600px) { height: 17vh; }
 `
 
 export const AppLogoWrapper = styled.div`
 
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 
     position:relative;
     display: flex;
 
+    text-align: left;
+    padding: 3%;
+
     @media screen and (max-width: 600px) {
-        flex-basis: 25%;
+        flex-basis: 35%;
         max-height: 80px;
         max-width: 40%;
     }
@@ -48,73 +53,85 @@ export const AppLogoWrapper = styled.div`
         max-height: 100px;  max-width:50%;
     }
 
-    text-align: left;
-    padding: 1%;
-    
     img {
-        width: 100%;
         height: 100%;
         max-width: 100%;
         object-fit: contain;
         object-position: left;
     }
+
     ${ ({isDeployed}) => !isDeployed && `
         img { opacity: 0.3;}
         &:hover ${StyledTooltip} { visibility: visible; }
     `}
 
     ${ ({isDeployed}) => isDeployed && `
-        &:hover img {
-            border: 2px dotted blue;
-            border-radius:5px;
-            overflow: visible;
-            transition: all 0.1s ease-in-out;
+        img:hover {
+            box-shadow: 
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 03rem #bc13fe;
         }
+        transition: all 0.2s ease-in-out;
     ` }
 `
 export const AppKeywordsWrapper = styled.div`
         height:100%;
-        flex-basis: 50%;
+        @media screen and (max-width: 600px) { flex-basis: 65%; }
+        @media screen and (min-width: 600px) { flex-basis: 55%;}
+        
         display: flex;
         flex-flow: column wrap;
+        justify-content: center;
         padding: 1%;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         overflow:hidden;
 
         p {
             width: 50%;
             margin: 0;
-            font-size: calc(0.7vw + 0.3vh + 1vmin);
-            text-overflow: ellipsis;
+            font-size: calc(0.7vw + 0.3vh + 1.5vmin);
+            overflow:hidden; text-overflow: ellipsis;
+            
+            border-left: 1px solid white;
+            padding-left: 2%;
         }
 `
 
-
 export const AppLinksWrapper = styled.div`
-    min-width: 30%;
-    display: flex;flex-flow: row nowrap;
-    justify-content: space-between;
+    display: flex;
+    @media screen and (max-width: 600px) { flex-basis:15%; flex-flow: column nowrap; }
+    @media screen and (min-width: 600px) { flex-basis:20%; flex-flow: row nowrap;}
+    justify-content: end;
 `
 
 export const AppLink = styled.div`
-    width: 50%;
     position: relative;
     &:hover ${StyledTooltip} { visibility: visible; }
-    
+    margin: 0 5%;
 `
 export const LinkImgWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    @media screen and (max-width: 600px) { height: 2em;width: 2em; }
-    @media screen and (min-width: 600px) { height: 3em;width: 3em; }
-    border: 1px solid white; border-radius: 50%;
-    img {  max-width:80%; height:auto; max-height: 70px;}
 
+    @media screen and (max-width: 600px) { height: 5vh; width: 5vh; }
+    @media screen and (min-width: 600px) { height: 7vh; width: 7vh; }
+    
+    border: 1px solid white; border-radius: 50%;
+    
+    img {  
+        max-width:80%; height:auto; max-height: 70px;
+    
+    }
     &:hover {
-        
         border-radius:5px;
-        transition: all 0.1s ease-in-out;        
+        transition: all 0.1s ease-in-out; 
+        /* border neon effect */
+        box-shadow: 
+                    0 0 0.8rem #bc13fe,
+                    0 0 2.8rem #bc13fe,
+                    inset 0 0 1.3rem #bc13fe;       
     }
 `
