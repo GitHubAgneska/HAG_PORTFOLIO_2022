@@ -16,10 +16,9 @@ export const StyledTooltip = styled.span`
 `
 
 export const StyledUl = styled.ul`
-    display: flex; 
-    @media screen and (max-width: 600px) {flex-flow: column nowrap;}
-    @media screen and (min-width: 600px) {flex-flow: column wrap;}
-    padding:2%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 `
 
 export const AppListItem = styled.li`
