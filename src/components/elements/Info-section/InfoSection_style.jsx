@@ -27,31 +27,34 @@ export const InfoSectionWrapper = styled.div`
 
 export const InfoPres =  styled.div`
 
-    border: 1px solid red;  
-    height:90px;
     display: flex; flex-flow: row nowrap;
-    flex-grow:1;
+    flex-grow: 2;
     align-items:center;
 
-    @media screen and (min-width: 600px) {width: unset; }
-    @media screen and (max-width: 600px) {width: 100%}
-    transition: all 0.3s linear;
+    @media screen and (min-width: 600px) {flex-basis: unset; }
+    @media screen and (max-width: 600px) {
+        flex-basis: 100%;
+        justify-content: space-around;
+    }
+    transition: all 0.2s linear;
     
     /* headshot */
     div:first-child { 
-        flex-basis: 30%;
-        flew-grow: 2;
+        flex: 0;
         padding:2%;
         img {
-            max-width:100%; height:auto;
-            max-height: 80px;min-width: 80px;
+            min-width: 80px;
             border-radius: 50%;
+            
+        /* max-width:100%;
+            height:auto;
+            max-height: 80px; */
         }
     }
 
 `
 export const InfoPresText = styled.div`
-    flex-basis: 70%;
+    /* flex-basis: 70%; */
     line-height:1.2;
     overflow: hidden;
     max-height: 100%;
@@ -69,14 +72,16 @@ export const InfoPresText = styled.div`
 export const InfoPresLinks = styled.div`
     display: flex;
     align-items:center;
-    @media screen and (max-width: 600px) {width: 100%;  flex-flow: column nowrap;}
-    @media screen and (min-width: 600px) {width: 50%; flex-flow: row nowrap; }
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {flex-basis: 100%;  flex-flow: column nowrap;}
+    @media screen and (min-width: 600px) {flex-flow: row nowrap; }
 `
 export const GroupIconsWrapper = styled.div`
-border: 1px solid red;  
+/* border: 1px solid red;   */
     display: flex;
     align-items:center;
     flex-flow: row nowrap;
+    
     @media screen and (max-width: 600px) {height:60px;}
     @media screen and (min-width: 600px) {justify-content: end;}
     div { margin: 5%; }
@@ -98,15 +103,19 @@ export const IconWrapper = styled.div`
         0 0 0.8rem #bc13fe,
         0 0 2.8rem #bc13fe,
         inset 0 0 03rem #bc13fe;
-        transition: all 0.3s linear;
+        transition: all 0.2s linear;
     }
 `
 export const DownloadIconWrapper = styled(IconWrapper)`
-border: 1px solid red;
-        height:100px;
+
+    @media screen and (max-width: 600px) {margin: 10%;}
+    @media screen and (min-width: 600px) {margin: 5%;}
+
     img {  
-        max-width:100%; height:auto;
-        max-height: 90px;min-width: 40px;
+        max-width:100%;
+        height:auto;
+        max-height: 90px;
+        min-width: 40px;
     }
 
 `

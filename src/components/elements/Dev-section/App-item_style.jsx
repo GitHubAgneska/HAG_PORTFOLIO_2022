@@ -57,7 +57,7 @@ export const AppLogoWrapper = styled.div`
     
     @media screen and (min-width: 600px) {
         flex-basis: 30%; 
-        max-height: 100px;  max-width:50%;
+        max-width:50%;
     }
 
     img {
@@ -94,8 +94,8 @@ export const AppKeywordsWrapper = styled.div`
         /* border: 1px solid yellow; */
         overflow:hidden;
 
+        p:first-child { font-weight: bold;}
         p {
-            width: 50%;
             margin: 0;
             font-size: calc(0.7vw + 0.3vh + 1.5vmin);
             overflow:hidden; text-overflow: ellipsis;
@@ -103,6 +103,7 @@ export const AppKeywordsWrapper = styled.div`
             border-left: 1px solid white;
             padding-left: 2%;
         }
+        p:hover { overflow:visible;  }
 `
 
 export const AppLinksWrapper = styled.div`
@@ -124,7 +125,7 @@ export const LinkImgWrapper = styled.div`
     align-items: center;
 
     @media screen and (max-width: 600px) { height: 5vh; width: 5vh; }
-    @media screen and (min-width: 600px) { height: 7vh; width: 7vh; }
+    @media screen and (min-width: 600px) { height: 9vh; width: 9vh; }
     
     border: 1px solid white; border-radius: 50%;
     

@@ -8,6 +8,7 @@ export const StyledNav = styled.nav`
     display: flex;
 
     a p { color: white;}
+    
     a:hover, a:active { 
         border:1px solid white; border-radius:5px;
 
@@ -32,7 +33,8 @@ export const StyledNav = styled.nav`
 
             height:60%; 
             margin: 3% 8.5%;
-            font-size: 50px;
+            font-size: calc(2vw + 3vh + 1vmin);
+
             a { padding: 3%; }
             a:first-child {  align-self: end; margin-left: 8.5%; }
             a:nth-child(2) { align-self: start;}
@@ -61,7 +63,7 @@ export const StyledNav = styled.nav`
                 width: 60%; display: flex; flex-flow: row nowrap;
                 justify-content: space-between;
             }
-
+    /* --------  MOBILE -------- */
             @media screen and (max-width: 600px) {
                 display: none; 
                 

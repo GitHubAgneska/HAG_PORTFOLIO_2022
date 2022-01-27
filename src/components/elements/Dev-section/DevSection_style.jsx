@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledSection = styled.section`
-    height: 70%;
+    height: 80%;
     overflow: scroll;
     margin: auto;
     @media screen and (min-width: 600px) {}

@@ -28,6 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         @media screen and (max-width: 600px) { margin: 0% 5%;}
         @media screen and (min-width: 600px) {margin: 0% 10%;} 
+        @media screen and (min-width: 1440px) {margin: 0% 1%;} 
         overflow: hidden;
     }
     

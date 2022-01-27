@@ -1,12 +1,14 @@
-import {StyledSection} from '../Dev-section/DevSection_style'
+import {WebdesignStyledSection, CarouselWrapper} from './WebdesignSection_style'
 import HagCarousel from '../Carousel/Carousel'
 
 const WebdesignSection = () => {
     return (
         <main>
-            <StyledSection>
-                <HagCarousel/>
-            </StyledSection>
+            <WebdesignStyledSection>
+                <CarouselWrapper>
+                    <HagCarousel/>
+                </CarouselWrapper>
+            </WebdesignStyledSection>
         </main>
     )
 }
