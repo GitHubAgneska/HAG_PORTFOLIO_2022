@@ -26,11 +26,12 @@ export const InfoSectionWrapper = styled.div`
 `
 
 export const InfoPres =  styled.div`
+
     border: 1px solid red;  
     height:90px;
     display: flex; flex-flow: row nowrap;
+    flex-grow:1;
     align-items:center;
-    width:100%;
 
     @media screen and (min-width: 600px) {width: unset; }
     @media screen and (max-width: 600px) {width: 100%}
@@ -43,7 +44,7 @@ export const InfoPres =  styled.div`
         padding:2%;
         img {
             max-width:100%; height:auto;
-            max-height: 80px;min-width: 40px;
+            max-height: 80px;min-width: 80px;
             border-radius: 50%;
         }
     }
@@ -78,6 +79,7 @@ border: 1px solid red;
     flex-flow: row nowrap;
     @media screen and (max-width: 600px) {height:60px;}
     @media screen and (min-width: 600px) {justify-content: end;}
+    div { margin: 5%; }
 
 
 `
@@ -90,7 +92,7 @@ export const IconWrapper = styled.div`
     
     img {  
         max-width:100%; height:auto;
-        max-height: 40px;min-width: 20px;
+        max-height: 60px;min-width: 30px;
         border-radius: 50%; }
     img:hover {
         box-shadow: 
@@ -105,7 +107,7 @@ border: 1px solid red;
         height:100px;
     img {  
         max-width:100%; height:auto;
-        max-height: 80px;min-width: 40px;
+        max-height: 90px;min-width: 40px;
     }
 
 `

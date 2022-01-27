@@ -9,8 +9,9 @@ export const FooterSection = styled.footer`
     
     text-align:center;
     font-family: 'Questrial';
-
-    p {margin: 0; }
-    @media screen and (max-width: 600px) {height:30px; p { font-size:15px; }}
-    @media screen and (min-width: 600px) {height:45px; p { font-size:25px; }}
+    height:30px
+    p {margin: 0; font-size:1.5vh; }
+    
+   /*  @media screen and (max-width: 600px) {height:30px; p { font-size:15px; }}
+    @media screen and (min-width: 600px) {height:45px; p { font-size:25px; }} */
 `
