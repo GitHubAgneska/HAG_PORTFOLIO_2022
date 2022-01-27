@@ -5,14 +5,20 @@ export const StyledTooltip = styled.span`
     width: 120px;
     position: absolute;
     z-index: 8;
-    top: -42px;
-    left: -24px;
+
+    top: -6vh;
+    left: ${({ parent }) => parent === 'deploy'? '6vh;':  '-12vh;'}
     padding: 5px 0;
     font-size: 0.8em;
     text-align: center;
     color: #fff;
     background-color: black;
     border-radius: 6px;
+    box-shadow: 
+                0 0 3px #fff,
+                0 0 0.2rem #0fa,
+                0 0 0.7rem #0fa,
+                inset 0 0 0.2rem #0fa;
 `
 
 export const AppListItem = styled.li `list-style-type:none`

@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
     
     transition: height 1s ease-in-out;
 
-    @media screen and (max-width: 600px) {height: 12vh;}
+    @media screen and (max-width: 600px) {height: 12vh; padding-top: 3%;}
     @media screen and (min-width: 600px) {height: 100px;}
     /* @media screen and (min-width: 1080px) {height: unset;}  */
     a { display: block; }

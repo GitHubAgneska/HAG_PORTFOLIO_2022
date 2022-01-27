@@ -6,6 +6,9 @@ import downloadresumeIcon from '../../../assets/icons/download_resume_icon.png'
 import githubIcon from '../../../assets/icons/github_logo_white.png'
 import linkedinIcon from '../../../assets/icons/linkedin_logo.png'
 
+const githubagneska = 'https://github.com/GitHubAgneska'
+const linkedIn = 'https://www.linkedin.com/in/h-agnes-genay/'
+
 const InfoSection = () => {
     return (
         <StyledInfoSection>
@@ -23,7 +26,7 @@ const InfoSection = () => {
                 <InfoPresLinks>
     
                     <DownloadIconWrapper>
-                        <NavLink to="../../../assets/cv/HAG_CV_2022.png" target="_blank" download>
+                        <NavLink to="../../../assets/cv/HAG_frontend_dev-CV_2022.png" target="_blank" download>
                             <img src={downloadresumeIcon} alt='download resume icon' />
                         </NavLink>
                     </DownloadIconWrapper>
@@ -31,11 +34,15 @@ const InfoSection = () => {
                     
                     <GroupIconsWrapper>
                         <IconWrapper>
-                            <img src={githubIcon} alt='github icon' />
+                            <a href={githubagneska} aria-label='link to github profile'>
+                                <img src={githubIcon} alt='github icon' />
+                            </a>
                         </IconWrapper>
 
                         <IconWrapper>
-                            <img src={linkedinIcon} alt='linkedin icon' />
+                            <a href={linkedIn} aria-label='link to linkedIn profile'>
+                                <img src={linkedinIcon} alt='linkedin icon' />
+                            </a>
                         </IconWrapper>
                     </GroupIconsWrapper>
 

@@ -31,10 +31,16 @@ export const InfoPres =  styled.div`
     flex-grow: 2;
     align-items:center;
 
-    @media screen and (min-width: 600px) {flex-basis: unset; }
+    @media screen and (min-width: 600px) {
+        flex-basis: 60%;
+        
+        border-right: 1px solid white;
+    }
     @media screen and (max-width: 600px) {
         flex-basis: 100%;
         justify-content: space-around;
+        padding-bottom: 5%;
+        border-bottom: 1px solid white;
     }
     transition: all 0.2s linear;
     
@@ -60,9 +66,14 @@ export const InfoPresText = styled.div`
     max-height: 100%;
     text-overflow: ellipsis;
     h1, h2, h3 {margin: 0;}
-    
-    h1, h2 {font-size: calc(1.5vw + 0.3vh + 1vmin); }
-    h3 {font-size: calc(1vw + 1vh + 0.3vmin); }
+    @media screen and (max-width: 600px) {
+        h1, h2 { font-size: calc(1vw + 1vh + 1vmin);} 
+        h3 {font-size: calc(1vw + 1vh + 0.8vmin); }
+    }
+    @media screen and (min-width: 600px) {
+        h1, h2 {font-size: calc(1.5vw + 0.3vh + 1vmin); }
+        h3 {font-size: calc(1vw + 1vh + 0.3vmin); }
+    }
     
     @media screen and (min-width: 1200px) {
         h1, h2 { font-size: calc(1.5vw + 0vh + 0vmin); }
@@ -74,7 +85,7 @@ export const InfoPresLinks = styled.div`
     align-items:center;
     justify-content: space-between;
     @media screen and (max-width: 600px) {flex-basis: 100%;  flex-flow: column nowrap;}
-    @media screen and (min-width: 600px) {flex-flow: row nowrap; }
+    @media screen and (min-width: 600px) {flex-flow: row nowrap; border-left: 1px solid white;}
 `
 export const GroupIconsWrapper = styled.div`
 /* border: 1px solid red;   */
@@ -108,7 +119,7 @@ export const IconWrapper = styled.div`
 `
 export const DownloadIconWrapper = styled(IconWrapper)`
 
-    @media screen and (max-width: 600px) {margin: 10%;}
+    @media screen and (max-width: 600px) {margin: 10%; height: 23vh;}
     @media screen and (min-width: 600px) {margin: 5%;}
 
     img {  
