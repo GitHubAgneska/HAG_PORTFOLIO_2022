@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     .app-container { 
         margin: 0% 10%;
         height: 100vh;
-        overflow: hidden;
+        /* overflow: hidden; */
         /* background-color:pink; */
     }
     main { width:100%; height:100vh;}

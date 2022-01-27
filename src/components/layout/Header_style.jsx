@@ -10,18 +10,14 @@ export const StyledHeader = styled.header`
     transition: height 1s ease-in-out;
     @media screen and (max-width: 600px) {height: 12vh;}
     @media screen and (min-width: 600px) {height: 100px;}
-    a { 
-        display: block;
-        max-width: 10vh;
-        &:hover { color: #0065FC; }
-    }
+    a { display: block; }
 `
 
 export const MainLogoWrapper = styled.div`
     margin: 2%;
     width: 15%;
     transition: all 1s ease-in-out;
-
+    a {  max-width: 10vh; }
     img {
         display: flex;
         justify-content: center;
