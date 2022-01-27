@@ -1,50 +1,111 @@
 import styled from 'styled-components'
+import '@fontsource/questrial'
 
 export const StyledInfoSection = styled.section`
-    margin:auto;
-    @media screen and (min-width: 600px) {width: 70%; }
-    @media screen and (max-width: 600px) {width: 85%;}
+    width:100%;
+    margin: 5% 0%;
+    border: 1px solid white; border-radius: 5px;
+    
+    /* border neon effect */
+    box-shadow: 
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+
+
     img { max-width:100%; height:auto; }
-    margin: 5% auto;
+    color: white; font-family: 'Questrial';
 `
 
 export const InfoSectionWrapper = styled.div`
-    a p { 
-        
-        @media screen and (min-width: 600px) {width : 30%; }
-        @media screen and (max-width: 600px) {}
-        margin: auto;
-        border: 1px solid blue; border-radius: 5px;
-        &:hover {border: 1px solid pink; }
-    }
+    padding:5%;
+    display: flex;
+    align-items:center;
+    @media screen and (max-width: 600px) {flex-flow: column nowrap;}
+    @media screen and (min-width: 600px) {flex-flow: row nowrap; justify-content: space-between; }
 `
 
 export const InfoPres =  styled.div`
+    border: 1px solid red;  
+    height:90px;
     display: flex; flex-flow: row nowrap;
     align-items:center;
     width:100%;
-    border:1px dotted red;border-radius: 5px;
-    @media screen and (min-width: 600px) {padding: 5%; margin: 5%; }
-    @media screen and (max-width: 600px) {padding: 2%;margin-bottom: 5%;}
+
+    @media screen and (min-width: 600px) {width: unset; }
+    @media screen and (max-width: 600px) {width: 100%}
     transition: all 0.3s linear;
     
+    /* headshot */
     div:first-child { 
-        width: 30%;
+        flex-basis: 30%;
+        flew-grow: 2;
+        padding:2%;
         img {
-            max-width:100%;
-            height:auto;
-            max-height: 80px;
+            max-width:100%; height:auto;
+            max-height: 80px;min-width: 40px;
             border-radius: 50%;
         }
     }
-    div:nth-child(2) {
-        h1, h2 {
-            font-size: 1em;
-            text-align: left;
-            margin:0% auto 0% 2%;
-        } 
-        h1 { color: grey; }
-        h2 { color: purple: }
 
-    } 
+`
+export const InfoPresText = styled.div`
+    flex-basis: 70%;
+    line-height:1.2;
+    overflow: hidden;
+    max-height: 100%;
+    text-overflow: ellipsis;
+    h1, h2, h3 {margin: 0;}
+    
+    h1, h2 {font-size: calc(1.5vw + 0.3vh + 1vmin); }
+    h3 {font-size: calc(1vw + 1vh + 0.3vmin); }
+    
+    @media screen and (min-width: 1200px) {
+        h1, h2 { font-size: calc(1.5vw + 0vh + 0vmin); }
+    }
+`
+
+export const InfoPresLinks = styled.div`
+    display: flex;
+    align-items:center;
+    @media screen and (max-width: 600px) {width: 100%;  flex-flow: column nowrap;}
+    @media screen and (min-width: 600px) {width: 50%; flex-flow: row nowrap; }
+`
+export const GroupIconsWrapper = styled.div`
+border: 1px solid red;  
+    display: flex;
+    align-items:center;
+    flex-flow: row nowrap;
+    @media screen and (max-width: 600px) {height:60px;}
+    @media screen and (min-width: 600px) {justify-content: end;}
+
+
+`
+
+export const IconWrapper = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {  
+        max-width:100%; height:auto;
+        max-height: 40px;min-width: 20px;
+        border-radius: 50%; }
+    img:hover {
+        box-shadow: 
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 03rem #bc13fe;
+        transition: all 0.3s linear;
+    }
+`
+export const DownloadIconWrapper = styled(IconWrapper)`
+border: 1px solid red;
+        height:100px;
+    img {  
+        max-width:100%; height:auto;
+        max-height: 80px;min-width: 40px;
+    }
+
 `
