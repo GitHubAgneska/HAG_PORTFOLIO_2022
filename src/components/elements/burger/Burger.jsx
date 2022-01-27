@@ -1,11 +1,11 @@
 import { StyledBurger } from './Buger_style'
 
 
-const Burger = ({ open, setOpen }) => {
+const Burger = ({ open, setOpen, hostParent }) => {
 
   return (
 
-    <StyledBurger open={open} onClick={setOpen}>
+    <StyledBurger hostParent={hostParent} open={open} onClick={setOpen}>
       {open
         ? <i className='fas fa-times' id='closeNavIcon' />
         : <i className='fas fa-bars' id='burgerIcon' />}

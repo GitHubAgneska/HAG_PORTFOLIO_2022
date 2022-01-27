@@ -18,8 +18,8 @@ export const StyledHeader = styled.header`
 `
 
 export const MainLogoWrapper = styled.div`
-    padding: 2%;
-    width: 10%;
+    margin: 2%;
+    width: 15%;
     transition: all 1s ease-in-out;
 
     img {

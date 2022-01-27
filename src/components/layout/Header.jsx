@@ -5,6 +5,7 @@ import { SrOnlyH1 } from '../../style/global_style'
 import hagLogo from '../../assets/logos/HAG_logo_darkBG_full.png'
 import NavComponent from '../layout/Nav/Nav'
 
+
 const Header = () => {
 
   return (
@@ -15,8 +16,8 @@ const Header = () => {
           <NavLink to='/'><MainLogo src={hagLogo} alt='hag Logo' /></NavLink>
           <SrOnlyH1>HAG portfolio webdev 2022</SrOnlyH1>
         </MainLogoWrapper>
-
-        <NavComponent hostParent="header" />
+        
+        <NavComponent />
 
       </StyledHeader>
     )

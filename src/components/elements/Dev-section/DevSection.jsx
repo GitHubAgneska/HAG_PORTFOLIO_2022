@@ -6,6 +6,7 @@ import {StyledUl} from './App-item_style'
 const DevSection = () => {
     return (
         <main>
+            
             <StyledSection>
                 <StyledUl> {
                     appItems.map(a => (

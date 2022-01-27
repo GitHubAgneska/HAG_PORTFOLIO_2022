@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import '@fontsource/shrikhand'
 
+export const NavWrapper = styled.div`
+
+`
+
+
 export const StyledNav = styled.nav`
     font-family: 'Shrikhand';
     display: flex;
@@ -19,8 +24,6 @@ export const StyledNav = styled.nav`
                     0 0 151px #0fa;
                     transition: all 0.3s linear;
     }
-
-    /* text-shadow: 0 0 10px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
     
     ${({ hostParent }) => hostParent === 'home' && `
         
@@ -41,13 +44,13 @@ export const StyledNav = styled.nav`
             a { align-self: initial; width: unset; p { text-align: center; }}
             justify-content: center;
         }
+        transition: all 0.5s linear;
     `}
-
-
-    z-index:5;
     transition: background-color 0.3s ease-in-out;
 
     ${({ hostParent }) => hostParent !== 'home' && `
+        position: absolute; top: 0; right: 0;
+
         @media screen and (max-width: 600px) { 
             ${({ burgerOpen }) => burgerOpen && `
                 position:fixed; 
@@ -67,14 +70,5 @@ export const StyledNav = styled.nav`
             `}
             ${({ burgerOpen }) => !burgerOpen && 'visibility: hidden;'}
         }
-    
     `}
-
-    /* @media screen and (min-width: 600px) {
-        .active { text-decoration: underline; font-weight: bold; }
-        flex-flow: row wrap;
-        width: 60%;
-        justify-content: space-between;
-        transition: width 1s ease-in-out;
-    } */
 `
