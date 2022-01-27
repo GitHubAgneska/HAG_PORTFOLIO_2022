@@ -35,31 +35,27 @@ export const AppItemWrapper = styled.div`
                 inset 0 0 0.2rem #0fa;
 
 
-    @media screen and (max-width: 600px) { height: 12vh; }
+    @media screen and (max-width: 600px) { height: 15vh; }
     @media screen and (min-width: 600px) { height: 17vh; }
 `
 
 export const AppLogoWrapper = styled.div`
 
-    /* border: 1px solid yellow; */
-
     position:relative;
     display: flex;
-
     text-align: left;
-    padding: 3%;
 
     @media screen and (max-width: 600px) {
         flex-basis: 35%;
         max-height: 80px;
         max-width: 40%;
+        padding: 1%;
     }
-    
     @media screen and (min-width: 600px) {
         flex-basis: 30%; 
         max-width:50%;
+        padding: 1%;
     }
-
     img {
         height: 100%;
         max-width: 100%;
@@ -84,31 +80,43 @@ export const AppLogoWrapper = styled.div`
 `
 export const AppKeywordsWrapper = styled.div`
         height:100%;
-        @media screen and (max-width: 600px) { flex-basis: 65%; }
-        @media screen and (min-width: 600px) { flex-basis: 55%;}
-        
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        padding: 1%;
-        /* border: 1px solid yellow; */
-        overflow:hidden;
 
         p:first-child { font-weight: bold;}
+
+        @media screen and (max-width: 600px) {
+            flex-basis: 65%;
+            p { font-size: calc(1vw + 1vh + 1vmin); }
+        }
+        @media screen and (min-width: 600px) {
+            flex-basis: 55%;
+            p { font-size: calc(0.7vw + 0.3vh + 1.5vmin);}
+        }
+        
+        padding: 1%;
+        overflow:hidden;
+
         p {
             margin: 0;
-            font-size: calc(0.7vw + 0.3vh + 1.5vmin);
-            overflow:hidden; text-overflow: ellipsis;
-            
+            overflow:hidden; 
+            text-overflow: ellipsis;
             border-left: 1px solid white;
             padding-left: 2%;
         }
-        p:hover { overflow:visible;  }
+        p:hover { overflow:visible; }
 `
 
 export const AppLinksWrapper = styled.div`
     display: flex;
-    @media screen and (max-width: 600px) { flex-basis:15%; flex-flow: column nowrap; }
+    @media screen and (max-width: 600px) {
+        flex-basis:15%;
+        flex-flow: column nowrap;
+        height: 100%;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+    }
     @media screen and (min-width: 600px) { flex-basis:20%; flex-flow: row nowrap;}
     justify-content: end;
 `
