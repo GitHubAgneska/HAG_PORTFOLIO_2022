@@ -22,7 +22,7 @@ export const appItems = [
   },
   {
     name: 'sportsee',
-    deployed: false,
+    deployed: true,
     keywords: ['Dashboard analytics', 'React', 'Recharts'],
     logo: logoPath + 'sportsee_logo_main.png',
     deployLink: 'https://sportsee.herokuapp.com/',
