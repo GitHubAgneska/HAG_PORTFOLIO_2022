@@ -43,14 +43,32 @@ export const appItems = [
     deployed: false,
     keywords: ['Banking app', 'React/Redux'],
     logo: logoPath + 'argentBank_logo.png',
-    deployLink: '',
+    deployLink: 'https://argent-bank-app.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020/blob/master/README.md'
   },
   {
+    name: 'les petits plats',
+    deployed: true,
+    keywords: ['Search engine','Vanilla Js', 'Algorithm performances'],
+    logo: logoPath + 'lesPetitsPlats_logo.png',
+    deployLink: 'https://githubagneska.github.io/js-prefix-tree-search/',
+    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
+    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md'
+  },
+  {
+    name: 'fisheye',
+    deployed: false,
+    keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
+    logo: logoPath + 'fisheye-logo.png',
+    deployLink: '',
+    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
+    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020/blob/master/README.md'
+  },
+  {
     name: 'ohmyfood',
     deployed: true,
-    keywords: [ 'Booking app', 'CSS animations', 'Integration/Full responsive'],
+    keywords: [ 'Booking app', 'Static', 'CSS animations', 'Integration/Full responsive'],
     logo: logoPath + 'ohmyfood_logo_white.png',
     deployLink: 'https://ohmyfoood.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_3_19112020',
@@ -64,24 +82,6 @@ export const appItems = [
     deployLink: 'https://githubagneska.github.io/GameOn-website-FR/',
     repoLink: 'https://github.com/GitHubAgneska/GameOn-website-FR',
     readmeLink: 'https://github.com/GitHubAgneska/GameOn-website-FR/blob/master/README.md'
-  },
-  {
-    name: 'fisheye',
-    deployed: false,
-    keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
-    logo: logoPath + 'fisheye-logo.png',
-    deployLink: '',
-    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
-    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020/blob/master/README.md'
-  },
-  {
-    name: 'les petits plats',
-    deployed: true,
-    keywords: ['Search engine','Vanilla Js', 'Algorithm performances'],
-    logo: logoPath + 'lesPetitsPlats_logo.png',
-    deployLink: 'https://githubagneska.github.io/js-prefix-tree-search/',
-    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
-    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md'
   },
   {
     name: 'reservia',
