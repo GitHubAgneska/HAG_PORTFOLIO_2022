@@ -58,8 +58,8 @@ export const appItems = [
   },
   {
     name: 'fisheye',
-    deployed: true,
-    notes: 'desktop only!',
+    deployed: false,
+    /* notes: 'desktop only!', */
     keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
     logo: logoPath + 'fisheye-logo_brightred.png',
     deployLink: 'https://githubagneska.github.io/HAgnesGenay_6_19112020/',

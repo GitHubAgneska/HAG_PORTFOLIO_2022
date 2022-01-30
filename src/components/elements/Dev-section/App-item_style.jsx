@@ -51,8 +51,7 @@ export const AppLogoWrapper = styled.div`
     max-height: 100%;
     display: flex;
     text-align: left;
-    flex-direction: column;
-
+    
     @media screen and (max-width: 600px) {
         flex-basis: 35%;
         max-height: 80px;
@@ -65,7 +64,7 @@ export const AppLogoWrapper = styled.div`
         max-width:50%;
         padding: 1%;
     }
-    a { overflow: hidden;}
+    /* a { overflow: hidden;} */
     img {
         height: 100%;
         max-width: 100%;
