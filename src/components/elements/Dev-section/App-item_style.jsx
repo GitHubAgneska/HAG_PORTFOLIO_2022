@@ -51,18 +51,21 @@ export const AppLogoWrapper = styled.div`
     max-height: 100%;
     display: flex;
     text-align: left;
+    flex-direction: column;
 
     @media screen and (max-width: 600px) {
         flex-basis: 35%;
         max-height: 80px;
         max-width: 40%;
         padding: 1%;
+        
     }
     @media screen and (min-width: 600px) {
         flex-basis: 30%; 
         max-width:50%;
         padding: 1%;
     }
+    a { overflow: hidden;}
     img {
         height: 100%;
         max-width: 100%;
@@ -81,10 +84,18 @@ export const AppLogoWrapper = styled.div`
             0 0 1rem #bc13fe,
             0 0 1rem #bc13fe,
             inset 0 0 10rem #bc13fe;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
     ` }
 `
+
+export const SpecialImg = styled.img`
+        &:hover { box-shadow: unset !important; }
+        object-position: initial !important;
+        object-fit: cover !important;
+       /*  @media screen and (min-width: 600px) { width:20%; } */
+`
+
 export const AppKeywordsWrapper = styled.div`
         height:100%;
         display: flex;

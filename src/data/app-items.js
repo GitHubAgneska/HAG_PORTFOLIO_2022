@@ -40,9 +40,9 @@ export const appItems = [
   },
   {
     name: 'moneybank',
-    deployed: false,
+    deployed: true,
     keywords: ['Banking app', 'React/Redux'],
-    logo: logoPath + 'argentBank_logo.png',
+    logo: logoPath + 'argentBank_logo_bright.png',
     deployLink: 'https://argent-bank-app.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020/blob/master/README.md'
@@ -58,9 +58,10 @@ export const appItems = [
   },
   {
     name: 'fisheye',
-    deployed: false,
+    deployed: true,
+    notes: 'desktop only!',
     keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
-    logo: logoPath + 'fisheye-logo.png',
+    logo: logoPath + 'fisheye-logo_brightred.png',
     deployLink: 'https://githubagneska.github.io/HAgnesGenay_6_19112020/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020/blob/master/README.md'
