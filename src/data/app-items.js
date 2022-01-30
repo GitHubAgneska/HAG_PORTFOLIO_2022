@@ -61,7 +61,7 @@ export const appItems = [
     deployed: false,
     keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
     logo: logoPath + 'fisheye-logo.png',
-    deployLink: '',
+    deployLink: 'https://githubagneska.github.io/HAgnesGenay_6_19112020/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020/blob/master/README.md'
   },
