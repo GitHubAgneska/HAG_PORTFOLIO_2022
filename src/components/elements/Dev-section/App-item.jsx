@@ -2,7 +2,7 @@ import { AppItemWrapper, AppListItem, AppLinksWrapper, AppLogoWrapper, SpecialIm
 import { SrOnlyH2 } from '../../../style/global_style'
 import githublogo from '../../../assets/icons/github_logo_white.png'
 import readme from '../../../assets/icons/readme_icon_nostroke_yellow.png'
-import desktopOnly from '../../../assets/icons/desktop-only_icon.png'
+import deployongoing from '../../../assets/icons/deploy-ongoing_icon.png'
 import Tooltip from '../tooltip/Tooltip'
 
 const AppItem = (app) => {
@@ -16,12 +16,14 @@ const AppItem = (app) => {
           <AppItemWrapper isDeployed={app[a].deployed}>
 
             <AppLogoWrapper isDeployed={app[a].deployed} appName={app[a].name} notes={app[a].notes}>
+              
               <Tooltip tooltipContent='deploy in progress!' parent='deploy' />
               <a href={app[a].deployLink} aria-label='app deploy'>
                 <img src={app[a].logo} alt='app logo' />
               </a>
-              { app[a].notes && 
-              <SpecialImg src={desktopOnly} alt='desktop only icon' />
+              
+              { !app[a].deployed && 
+                <SpecialImg src={deployongoing} alt='ongoing deploy icon' />
               }
 
             </AppLogoWrapper>

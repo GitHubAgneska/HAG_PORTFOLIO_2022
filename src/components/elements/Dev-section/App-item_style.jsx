@@ -51,6 +51,7 @@ export const AppLogoWrapper = styled.div`
     max-height: 100%;
     display: flex;
     text-align: left;
+    flex-flow: column nowrap;
     
     @media screen and (max-width: 600px) {
         flex-basis: 35%;
@@ -64,7 +65,7 @@ export const AppLogoWrapper = styled.div`
         max-width:50%;
         padding: 1%;
     }
-    /* a { overflow: hidden;} */
+    a { overflow: hidden;}
     img {
         height: 100%;
         max-width: 100%;
@@ -73,8 +74,9 @@ export const AppLogoWrapper = styled.div`
     }
 
     ${ ({isDeployed}) => !isDeployed && `
-        img { opacity: 0.3;}
+        /* img { opacity: 0.3;} */
         &:hover ${StyledTooltip} { visibility: visible; }
+
     `}
 
     ${ ({isDeployed}) => isDeployed && `
@@ -90,9 +92,11 @@ export const AppLogoWrapper = styled.div`
 
 export const SpecialImg = styled.img`
         &:hover { box-shadow: unset !important; }
+        opacity: 1 !important;
         object-position: initial !important;
-        object-fit: cover !important;
-       /*  @media screen and (min-width: 600px) { width:20%; } */
+
+        @media screen and (max-width: 600px) { object-fit: cover !important; }
+        @media screen and (min-width: 600px) { object-fit: contain !important; }
 `
 
 export const AppKeywordsWrapper = styled.div`

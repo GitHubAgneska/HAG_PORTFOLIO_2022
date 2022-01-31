@@ -14,7 +14,7 @@ export const appItems = [
     name: 'hrnet',
     deployed: false,
     keywords: ['HR intra', 'App redesign from JQuery to React/Redux'] ,
-    logo: logoPath + 'hrnet_logo.png',
+    logo: logoPath + 'hrnet_logo_bright.png',
     logo2: 'hag_logo_2020_small.png',
     deployLink: '',
     repoLink: 'https://github.com/GitHubAgneska/HRNET-app',
@@ -40,9 +40,9 @@ export const appItems = [
   },
   {
     name: 'moneybank',
-    deployed: true,
+    deployed: false,
     keywords: ['Banking app', 'React/Redux'],
-    logo: logoPath + 'argentBank_logo_bright.png',
+    logo: logoPath + 'argentbank_logo_bright.png',
     deployLink: 'https://argent-bank-app.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020/blob/master/README.md'
@@ -51,7 +51,7 @@ export const appItems = [
     name: 'les petits plats',
     deployed: true,
     keywords: ['Search engine','Vanilla Js', 'Algorithm performances'],
-    logo: logoPath + 'lesPetitsPlats_logo.png',
+    logo: logoPath + 'lespetitsplats_logo_bright.png',
     deployLink: 'https://githubagneska.github.io/js-prefix-tree-search/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md'
@@ -62,7 +62,7 @@ export const appItems = [
     /* notes: 'desktop only!', */
     keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
     logo: logoPath + 'fisheye-logo_brightred.png',
-    deployLink: 'https://githubagneska.github.io/HAgnesGenay_6_19112020/',
+    deployLink: '',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020/blob/master/README.md'
   },
