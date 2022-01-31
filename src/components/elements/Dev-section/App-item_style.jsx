@@ -40,22 +40,21 @@ export const AppItemWrapper = styled.div`
                 0 0 0.7rem #0fa,
                 inset 0 0 0.2rem #0fa;
 
-
     @media screen and (max-width: 600px) { height: 15vh; }
     @media screen and (min-width: 600px) { height: 17vh; }
 `
 
 export const AppLogoWrapper = styled.div`
 
-    position:relative;
-    max-height: 100%;
+    /* border:1px solid yellow; */
+    
+    height: 100%;
+    position:relative; /* related to tooltip abs pos */
     display: flex;
-    text-align: left;
-    flex-flow: column nowrap;
     
     @media screen and (max-width: 600px) {
         flex-basis: 35%;
-        max-height: 80px;
+        /* max-height: 80px; */
         max-width: 40%;
         padding: 1%;
         
@@ -93,8 +92,11 @@ export const AppLogoWrapper = styled.div`
 export const SpecialImg = styled.img`
         &:hover { box-shadow: unset !important; }
         opacity: 1 !important;
+        box-shadow:  0 0 1rem #000000, inset 0 0 10rem #00000080;
         object-position: initial !important;
-
+        z-index:2;
+        position: absolute; bottom: 0; right:0;
+        
         @media screen and (max-width: 600px) { object-fit: cover !important; }
         @media screen and (min-width: 600px) { object-fit: contain !important; }
 `
