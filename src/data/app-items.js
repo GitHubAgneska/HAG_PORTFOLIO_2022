@@ -12,11 +12,11 @@ export const appItems = [
   },
   {
     name: 'hrnet',
-    deployed: false,
+    deployed: true,
     keywords: ['HR intra', 'App redesign from JQuery to React/Redux'] ,
     logo: logoPath + 'hrnet_logo_bright.png',
     logo2: 'hag_logo_2020_small.png',
-    deployLink: '',
+    deployLink: 'https://hrnet.herokuapp.com/create-employee',
     repoLink: 'https://github.com/GitHubAgneska/HRNET-app',
     readmeLink: 'https://github.com/GitHubAgneska/HRNET-app/blob/master/README.md'
   },
