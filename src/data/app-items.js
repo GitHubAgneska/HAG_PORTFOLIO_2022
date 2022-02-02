@@ -4,7 +4,7 @@ export const appItems = [
   {
     name: 'candychase',
     deployed: true,
-    keywords: ['Game/educational', 'Ionic5', 'Leaflet geoloc'],
+    keywords: ['Game/educational', 'Ionic5'],
     logo: logoPath + 'candychase_logo-full.png',
     deployLink: 'https://candychase2020-ionic5.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
@@ -12,7 +12,7 @@ export const appItems = [
   },
   {
     name: 'hrnet',
-    deployed: true,
+    deployed: false,
     keywords: ['HR intra', 'App redesign from JQuery to React/Redux'] ,
     logo: logoPath + 'hrnet_logo_bright.png',
     logo2: 'hag_logo_2020_small.png',
@@ -30,6 +30,24 @@ export const appItems = [
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_12_19112020/blob/master/README.md'
   },
   {
+    name: 'moneybank',
+    deployed: false,
+    keywords: ['Banking app', 'React/Redux'],
+    logo: logoPath + 'argentbank_logo_bright.png',
+    deployLink: 'https://argent-bank-app.herokuapp.com/',
+    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
+    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020/blob/master/README.md'
+  },
+  /* {
+    name: 'les petits plats',
+    deployed: true,
+    keywords: ['Search engine','Vanilla Js', 'Algorithm performances'],
+    logo: logoPath + 'lespetitsplats_logo_bright.png',
+    deployLink: 'https://githubagneska.github.io/js-prefix-tree-search/',
+    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
+    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md'
+  }, */
+  {
     name: 'kasa',
     deployed: true,
     keywords: ['B&B app', 'React', 'Integration/Full responsive' ],
@@ -38,33 +56,23 @@ export const appItems = [
     repoLink: 'https://github.com/GitHubAgneska/KASA',
     readmeLink: ''
   },
-  {
-    name: 'moneybank',
-    deployed: true,
-    keywords: ['Banking app', 'React/Redux'],
-    logo: logoPath + 'argentbank_logo_bright.png',
-    deployLink: 'https://argent-bank-app.herokuapp.com/',
-    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
-    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020/blob/master/README.md'
-  },
-  {
-    name: 'les petits plats',
-    deployed: true,
-    keywords: ['Search engine','Vanilla Js', 'Algorithm performances'],
-    logo: logoPath + 'lespetitsplats_logo_bright.png',
-    deployLink: 'https://githubagneska.github.io/js-prefix-tree-search/',
-    repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
-    readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020/blob/master/README.md'
-  },
-  {
+  /* {
     name: 'fisheye',
     deployed: false,
-    /* notes: 'desktop only!', */
     keywords: [ 'Freelance platform', 'Vanilla Js','Full accessibility support'],
     logo: logoPath + 'fisheye-logo_brightred.png',
     deployLink: '',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_6_19112020/blob/master/README.md'
+  }, */
+  {
+    name: 'gameon',
+    deployed: true,
+    keywords: ['Info page', 'Vanilla Js', 'Integration/Full responsive'],
+    logo: logoPath + 'gameon_logo_M.png',
+    deployLink: 'https://githubagneska.github.io/GameOn-website-FR/',
+    repoLink: 'https://github.com/GitHubAgneska/GameOn-website-FR',
+    readmeLink: 'https://github.com/GitHubAgneska/GameOn-website-FR/blob/master/README.md'
   },
   {
     name: 'ohmyfood',
@@ -74,15 +82,6 @@ export const appItems = [
     deployLink: 'https://ohmyfoood.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_3_19112020',
     readmeLink: 'https://github.com/GitHubAgneska/HAgnesGenay_3_19112020/blob/master/README.md'
-  },
-  {
-    name: 'gameon',
-    deployed: true,
-    keywords: ['Info page', 'Vanilla Js', 'Integration/Full responsive'],
-    logo: logoPath + 'gameon_logo_M.png',
-    deployLink: 'https://githubagneska.github.io/GameOn-website-FR/',
-    repoLink: 'https://github.com/GitHubAgneska/GameOn-website-FR',
-    readmeLink: 'https://github.com/GitHubAgneska/GameOn-website-FR/blob/master/README.md'
   },
   {
     name: 'reservia',
