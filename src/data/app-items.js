@@ -40,7 +40,7 @@ export const appItems = [
   },
   {
     name: 'moneybank',
-    deployed: false,
+    deployed: true,
     keywords: ['Banking app', 'React/Redux'],
     logo: logoPath + 'argentbank_logo_bright.png',
     deployLink: 'https://argent-bank-app.herokuapp.com/',
