@@ -4,7 +4,7 @@ export const appItems = [
   {
     name: 'candychase',
     deployed: true,
-    keywords: ['Game/educational', 'Ionic5'],
+    keywords: ['Game/educational', 'Ionic5', 'API'],
     logo: logoPath + 'candychase_logo-full.png',
     deployLink: 'https://candychase2020-ionic5.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_7_19112020',
@@ -12,18 +12,18 @@ export const appItems = [
   },
   {
     name: 'hrnet',
-    deployed: false,
-    keywords: ['HR intra', 'App redesign from JQuery to React/Redux'] ,
+    deployed: true,
+    keywords: ['HR platform', 'Refactoring JS/JQuery to MERN'] ,
     logo: logoPath + 'hrnet_logo_bright.png',
     logo2: 'hag_logo_2020_small.png',
-    deployLink: 'https://hrnet.herokuapp.com/create-employee',
+    deployLink: 'https://hrnet.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HRNET-app',
     readmeLink: 'https://github.com/GitHubAgneska/HRNET-app/blob/master/README.md'
   },
   {
     name: 'sportsee',
     deployed: true,
-    keywords: ['Dashboard analytics', 'React', 'Recharts'],
+    keywords: ['Dashboard analytics', 'React/Express', 'Recharts', 'API'],
     logo: logoPath + 'sportsee_logo_main.png',
     deployLink: 'https://sportsee.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/SPORTSEE',
@@ -31,8 +31,8 @@ export const appItems = [
   },
   {
     name: 'moneybank',
-    deployed: false,
-    keywords: ['Banking app', 'React/Redux'],
+    deployed: true,
+    keywords: ['Banking app', 'MERN'],
     logo: logoPath + 'argentbank_logo_bright.png',
     deployLink: 'https://argent-bank-app.herokuapp.com/',
     repoLink: 'https://github.com/GitHubAgneska/HAgnesGenay_13_19112020',
