@@ -16,7 +16,7 @@ const HagCarousel = () => {
             { designLayouts.map( d => (
                 
                 <div key={Math.random()}>
-                    <img src={d} alt='candychase Design' />
+                    <img src={d} alt='candychase Design' loading="lazy"/>
                    {/*  <p className='legend'>Legend 1</p> */}
                 </div>
 
